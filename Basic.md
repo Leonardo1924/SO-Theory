@@ -30,10 +30,10 @@
   - `Hardware:` Os recursos basicos do sistema (Cpu, memoria, I/O devices, ...);
   - `Sistema Operativo:` Controla e coordena o uso do Hardware entre os diferentes programas e utilizadores;
   - `Programas:` Definem a maneira como os recursos do sistema são usados para resolver as necessidades do Utilizador( processadores de palavras, browsers, bases de dados, games, compiladores);
-  - `Users`;
+  - `Users`.
 
 
-#Principios de um Sistema Operativo.
+###Principios de um Sistema Operativo.
 
 #### Sistema Operativo como um alocador de recursos/controlador:
 
