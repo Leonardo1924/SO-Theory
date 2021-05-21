@@ -50,5 +50,54 @@
 ### Muitos OS aplicam os principios anteriores:
   - `Exemplo:` O gestor de ficheiros é necessário para todos os users (facilitador) e tem de ser eficiente e protegido (controlador).
 
+## Principais Componentes.
+  ### Sistemas Operativos modernos incluem, normalmente, os principais componentes:
+  
+  - Gestor de Processos;
+  - Gestor de Memoria;
+  - Gestor de Armazenamento;
+  - Gestor de I/O (Input/Output);
     
+## Gestor de Processos:
+  ### Funções Principais:
     
+   - Criar, suspender, resumir e terminar processos (User/System);
+   - Fornecer mecanismos para a comunição de processos;
+   - Fornecer mecanismos para a sincronização de processos;
+   - Fornece mecanismo para problemas ligados ao bloqueio de processos;
+    
+## Gestor de Memoria:
+   ### Funções Principais:
+   
+   - Alocar e desalocar espaço na memoria conforme necessário.
+   - Ratreio das partes da memoria que estão atualmente a ser utilizadas e por quem.
+   - Decidir que processos/dados mover para dentro e fora da memoria e quando.
+
+## Gestor de Armazenamento:
+   ### Funções Principais:
+   
+   - Fornece uma visão uniforme (abstrata) e logica da informação no armazenamento ( visão em ficheiros e diretorias logicas).
+   - Apoia `primitives` para criar, apagar e manipular ficheiros ou diretorias.
+   - Apoia o controlo de acesso para determinar quem te acesso ou não a determinado ficheiro ou diretoria.
+   - Mapeamento em suportes de armazenamento secundário.
+   
+## Gestor de I/O :
+   ### Funções Principais:
+   
+   #### Esconder pecularidades de dispositivos de hardware do utlizador:
+   
+   - Geralmente interface dispostivo-driver.
+   - Drivers para dispostivos de hardware especificos.
+
+  #### Responsável pela gestão de memória de I/O incluindo:
+  
+  - Buffering - Armazenamento temporario de dados enquanto estão a ser transferidos.
+  - Catching  - Armazenamento de partes de dados em armazenamento rapido para melhor a performance.
+  - Spooling  - Sobreposição de um output de um processo com o input de outros. 
+  
+## Serviços Comuns de um Sistema Operativo:
+
+  ### Sistemas operativos fornecem um ambiente para a execução de programas e, para isso, fornece servicos especificos para programas e para utilizadores
+  ![imagem](https://user-images.githubusercontent.com/62023102/119206636-95bbbe00-ba93-11eb-96c6-3fe7e2ed6592.png)
+
+
