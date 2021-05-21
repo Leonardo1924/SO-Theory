@@ -23,6 +23,8 @@
   - Um sistema operativo foi concebido para maximizar a utlização de recursos e para garantir que todo o tempo do Cpu, memoria e I/O são usados de forma eficiente e justa entre todos os utilizadores.
   
   - O Sistema operativo é projetado principalmente para facilitar a utilização, com mais foco na performance do que na utlização de recursos.
-  - Configurado para correr com a nenhuma/minima intervenção do usuario.
+  - Configurado para correr com nenhuma/minima intervenção do usuario.
 
 ## Um Sistema pode ser divido em 4 componentes principais:
+  
+  -###Hardware:
