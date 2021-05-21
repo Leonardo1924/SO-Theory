@@ -32,14 +32,16 @@
   - `Programas:` Definem a maneira como os recursos do sistema são usados para resolver as necessidades do Utilizador( processadores de palavras, browsers, bases de dados, games, compiladores);
   - `Users`.
 
-## Sistema Operativo como um alocador de recursos/controlador:
+## Principios de um Sistema Operativo.
+
+### Sistema Operativo como um alocador de recursos/controlador:
 
   - Atua como um gestor de todos os recursos: Tempo do CPU, espaço em memoria, I/O devices.
   - Decide entre pedidos em conflito para um uso de recursos mais eficiente e justa.
   - Previne erros e utilização "impropria" do computador.
   - Especialmente importante quando muitos utilizadores tem acesso aos mesmos recursos.
   
-## Sistema Operativo como um facilitador:
+### Sistema Operativo como um facilitador:
   
   - Fornece serviços que todos precisam.
   - Torna a programação um processo mais facil, rápido , menos propenso a erros.
