@@ -10,4 +10,3 @@
  3. [Ficha3: Exec](./Ficha3.md)
  5. [Ficha5: Pipes anónimos](./Ficha5.md)
 
-Referencias Ricardo Rocha -> Faculdade de Ciencias do Porto
