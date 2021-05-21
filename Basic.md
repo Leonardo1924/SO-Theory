@@ -27,4 +27,4 @@
 
 ## Um Sistema pode ser divido em 4 componentes principais:
   
-  -###Hardware:
+  - ###Hardware:
