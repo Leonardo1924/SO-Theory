@@ -32,7 +32,7 @@
   - `Programas:` Definem a maneira como os recursos do sistema são usados para resolver as necessidades do Utilizador( processadores de palavras, browsers, bases de dados, games, compiladores);
   - `Users`.
 
-## Principios de um Sistema Operativo.
+## Principios de um Sistema Operativo:
 
 ### Sistema Operativo como um alocador de recursos/controlador:
 
@@ -46,6 +46,9 @@
   - Fornece serviços que todos precisam.
   - Torna a programação um processo mais facil, rápido , menos propenso a erros.
   - Especialmente preocupado com a execução de varios programas.
+  
+### Muitos OS aplicam os principios anteriores:
+  - `Exemplo:` O gestor de ficheiros é necessário para todos os users (facilitador) e tem de ser eficiente e protegido (controlador).
 
     
     
