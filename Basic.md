@@ -33,7 +33,7 @@
   - `Users`;
 
 
-##Principios de um Sistema Operativo.
+#Principios de um Sistema Operativo.
 
 #### Sistema Operativo como um alocador de recursos/controlador:
 
