@@ -25,7 +25,7 @@
   - O Sistema operativo é projetado principalmente para facilitar a utilização, com mais foco na performance do que na utlização de recursos.
   - Configurado para correr com nenhuma/minima intervenção do usuario.
 
-## Um Sistema pode ser divido em 4 componentes principais:
+### Um Sistema pode ser divido em 4 componentes principais:
   
   - `Hardware:` Os recursos basicos do sistema (Cpu, memoria, I/O devices, ...);
   - `Sistema Operativo:` Controla e coordena o uso do Hardware entre os diferentes programas e utilizadores;
