@@ -99,5 +99,24 @@
 
   ### Sistemas operativos fornecem um ambiente para a execução de programas e, para isso, fornece servicos especificos para programas e para utilizadores
   ![imagem](https://user-images.githubusercontent.com/62023102/119206636-95bbbe00-ba93-11eb-96c6-3fe7e2ed6592.png)
+  
+  #### Os serviços fornecidos varia entre sistemas operativos mas existem alguns comuns a todos:
+  
+  - `USER interfaces`: Permitem o funcionamento e controlo eficazes do sistema.
+  - `Programa execution`: Para carregar um programa em memoria e corre-lo.
+  - `I/O operations`: Fornece um meio para as operações ligadas a I/O.
+  - `File Systems`: Permite uma manipulação eficaz de ficheiros e diretorias.
+  - `Communications`: Permite a troca de informação entre processos no mesmo dispostivo ou entre dispostivos.
+  - `Error detection`: Para estar constantemente ciente de possiveis erros que podem ocorrer no CPU/ Memoria / I/O ou programas do utlizador de forma a tomar a ação adequada para assegurar uma computação correta e consistente.
 
+#### Outros Serviços existentes não para proveito do utilizador mas do sistema em si:
+
+-`Alocação de Recursos`: Quando multiplos processos se encontram a correr de forma concorrente, os recursos disponiveis (CPU/MEMORY,File Storage ...) devem ser alocados de forma eficiente para cada um dos processos.
+
+-`Accounting` : Para acompanhar a quantidade e os tipos de recursos utilizados por cada utilizador.
+
+-`Proteção e Segurança`: Para evitar a interfêrencia entre processos concorrentes ou com o próprio OS e proteger o sistema contra outsiders.
+
+# MultiPograming
+  
 
