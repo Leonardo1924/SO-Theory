@@ -50,9 +50,9 @@ Para garantir que deadlocks nunca ocorem, o sistema pode usar um protocolo para 
 
 Se o sistem a não implementa nenhum dos protocolos anteriores então é provável que ocorra o aparecimento de um deadlock:
 
-  - Deadlock detection -> Método que examina o estado do sistema para determinar se ocorreu algum deadlock e fornece algoritmos para recuperar dos mesmos.
+  - `Deadlock detection` -> Método que examina o estado do sistema para determinar se ocorreu algum deadlock e fornece algoritmos para recuperar dos mesmos.
 
 No caso de ausência de métodos para prevenir, evitar ou recuperar de deadlocks chegamos a uma situação em que o sistema se encontra num estado bloqueado e não tem forma nenhuma de reconhecer o que aconteceu.
 
-- Undetected deadlocks -> podem causar a deteriorização da performance do sistema, uma vez que os recursos estão a ser retidos por processos que não podem correr e devido a acumulação de cada vez mais e mais processos, que necessitam dos recursos que se encontram bloqueados acabando esses por entrar também em deadlock( eventualmente o sistema irá parar de funcionar e será necessário reinicia-lo manualmente).
+- `Undetected deadlocks` -> podem causar a deteriorização da performance do sistema, uma vez que os recursos estão a ser retidos por processos que não podem correr e devido a acumulação de cada vez mais e mais processos, que necessitam dos recursos que se encontram bloqueados acabando esses por entrar também em deadlock( eventualmente o sistema irá parar de funcionar e será necessário reinicia-lo manualmente).
 
