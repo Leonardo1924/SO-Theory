@@ -16,6 +16,6 @@
  
 ## Matéria e informações adicionais podem ser encontradas aqui:
  1. [Threads](./Threads.md)
- 2. [File System](./File_System.md)
+ 2. [Storage Devices](./St_Device.md)
  3. [ResumosMIEI](https://github.com/mendess/ResumosMIEI/tree/master/SO)
 
