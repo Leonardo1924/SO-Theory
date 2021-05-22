@@ -6,7 +6,7 @@
 
  0. [Conceitos Basicos](./Basic.md)
  1. [Ficheiros](https://github.com/mendess/ResumosMIEI/blob/master/SO/Ficha1.md)
- 2. [Processos](./Process.md)
+ 2. [Processos](./Process.md && https://github.com/mendess/ResumosMIEI/blob/master/SO/Ficha2.md)
  3. [Agendamento de Processos](./Process_Schedule.md)
  4. [Sincronização de Processos](./Process_Sync.md)
  
