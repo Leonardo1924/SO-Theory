@@ -63,6 +63,11 @@ Precisamos de garantir que cada processo tem um espaço separado na memória.
  
 ![imagem](https://user-images.githubusercontent.com/62023102/119243191-789ef200-bb5c-11eb-913f-f349e9e43554.png)
 
- 
- 
+
+# Logical Vs Physical Address Space:
+
+O conceito de um espaço de endereço lógico está ligado a um espaço de endereço físco separado é central para uma gestão adequada de memória
+
+- `Logical Address`: Endereço gerado pelo CPU;
+- `Physical Address`: Endereço visto pela unidade de memória;
  
