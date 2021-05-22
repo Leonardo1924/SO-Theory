@@ -10,7 +10,7 @@
  3. [Agendamento de Processos](./Process_Schedule.md)
  4. [Sincronização de Processos](./Process_Sync.md)
  
-## Informações adicionais podem ser encontradas aqui:
+## Materia e informações adicionais podem ser encontradas aqui:
  5. [Threads](./Threads.md)
  6. [File System](./File_System.md)
  7. [ResumosMIEI](https://github.com/mendess/ResumosMIEI/tree/master/SO)
