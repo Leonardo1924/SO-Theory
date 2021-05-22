@@ -98,3 +98,55 @@ Se o tempo quantum for Q e houverem N processos na ready queue, então quanda pr
 RR -> Tempo Médio de Espera
 
 - (6 + 4 + 7) / 3 = 17/3 = 5.66
+
+# Shortest-Job-First(SJF)
+
+Associa cada processo com o tamanho do seu proximo CPU burst e usa estes tamanhos para agendar o processo com o burst mais curto de CPU.
+
+- Se o próximo CPU Burst de dois processos for igual, usa-se o FCFS para quebrar o empate.
+
+SJF é ideal porque dá sempre o tempo mínimo de espera médio para um determinado conjuntos de processos
+
+- Mover o processo mais curto para antes de um longo diminui o tempo de espera do processo mais curto no entanto aumenta o tempo de espera do processo mais longo.
+- A dificuldade é saber o tamanho do proimo CPU burst.
+
+![imagem](https://user-images.githubusercontent.com/62023102/119230928-4b2f5580-bb16-11eb-8723-d9b94aebe892.png)
+
+SJF -> Tempo médio de espera
+
+- (0 + 3 + 9 + 16) / 4 = 28 / 4 = 7 
+
+FCFS -> Tempo médio de espera
+
+- (0 + 6 + 14 + 21) / 4 = 41/4 = 10.25
+
+# Escalonamento Prioritário
+
+É associado um número prioritario a cada processo e o CPU é alocado para o processo para o processo com a maior prioridade.
+
+- Processos de igual prioridade são escalonados pela ordem de FCFS.
+- SJF pode ser visto como um algoritmo de prioridade.
+
+Escalonamento prioritário pode ser:
+ - Preemptive, antecipa o CPU se a prioridade de um processo recem chagado é maior que a prioridade do processo atualmente a correr.
+ - NonPreemptive, permite ao atual processo acabar o seu CPU burst.
+
+Principal Problema -> Indefinite Blocking ou Starvation.
+ - Processos de baixa prioridade podem nunca ser executados e esperar indefinitivamente
+ - A solução mais comum é o envelhecimento (aging), aumenta a prioridade dos processos pouco a pouco até que acabam por executar e terminar.
+
+![imagem](https://user-images.githubusercontent.com/62023102/119231888-e1fe1100-bb1a-11eb-9fa9-f359b0c1cb82.png)
+
+# Multilevel Queue (MLQ)
+
+Divide a read queue em partições gerando varias queues.
+
+- Os processos são permanentemente atribuidos a uma queue, geralmente baseado em alguma propriedade do processo, como tamanho em memoria, prioridade do processo. 
+
+- Cada queue tem o seu proprio algoritmo de escalonamento.
+
+- Cada queue tem prioridade absoluta sobre a queue mais abaixo dessa.
+
+- Cada queue tem um certa quantidade de tempo de CPU que depois é devido entre os processos
+
+![imagem](https://user-images.githubusercontent.com/62023102/119232299-9f3d3880-bb1c-11eb-8f93-543de02476ed.png)
