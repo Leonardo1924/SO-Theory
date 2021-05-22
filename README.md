@@ -12,9 +12,10 @@
  5. [Sincronização de Processos](./Process_Sync.md)
  6. [Semáforos](./Semaphores.md)
  7. [Starvation and DeadLock](./S&D.md)
- 8. [Threads](./Threads.md)
+
  
 ## Matéria e informações adicionais podem ser encontradas aqui:
+ 1. [Threads](./Threads.md)
  2. [File System](./File_System.md)
  3. [ResumosMIEI](https://github.com/mendess/ResumosMIEI/tree/master/SO)
 
