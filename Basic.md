@@ -175,5 +175,6 @@ São, na maior parte dos casos acedidas através de uma API em vez de uma chamad
   - Manutenção de informação;
   - Comunicação(Pipes);
   - Proteção;
+
 ![imagem](https://user-images.githubusercontent.com/62023102/119208669-2ba71700-ba9b-11eb-9649-5c4199b6b5aa.png)
 
