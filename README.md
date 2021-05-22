@@ -12,7 +12,7 @@
  5. [Sincronização de Processos](./Process_Sync.md)
  6. [Semáforos](./Semaphores.md)
  7. [Starvation and DeadLock](./S&D.md)
- 8. [Gestão de Mémoria](./Memory_Management.md)
+ 8. [Gestão de Memória](./Memory_Management.md)
  9. [Memória Virtual](./Virtual_Memory.md)
 
  
