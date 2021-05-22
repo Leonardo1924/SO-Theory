@@ -151,3 +151,29 @@ Não podemos permitir que um programa fique "preso" ou falhe e nunca devolva o c
 
 Pode ser configurado para interrumper um processo depois de um certo periodo de tempo.
 Se o timer interromper algum procresso o controlo é transferido de imediato para o sistema operativo sendo a interrupção tratada como um fatal error.
+
+# System Calls
+
+As `System Calls` funcionam como uma interface para os serviços do Sistema Operativo.
+São, na maior parte dos casos acedidas através de uma API em vez de uma chamada direta ao sistema.
+
+## Por que razão é melhor usar uma API que uma chamada direta ao sistema?
+  
+  - O mesmo programa deve compilar e correr num outro sistema que suporta essa API.
+  - As System Calls podem ser mais detalhas e dificies de trabalhar quando comparadas a API disponivel para o programador. 
+
+## System Call -> Implementação
+  
+  -Tipicamente, um número é associado a cada system call que depois é mantido numa tabela indexada de acordo com esses mesmos números.
+  
+### Exemplos de Tipos de System Calls: 
+
+#### Podem ser agrupadas em 6 categorias:
+  - Controlo de Processos;
+  - Manipulação de Ficheiros;
+  - Manipulação de Dispositivos;
+  - Manutenção de informação;
+  - Comunicação(Pipes);
+  - Proteção;
+![imagem](https://user-images.githubusercontent.com/62023102/119208669-2ba71700-ba9b-11eb-9649-5c4199b6b5aa.png)
+
