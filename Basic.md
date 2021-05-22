@@ -164,7 +164,7 @@ São, na maior parte dos casos acedidas através de uma API em vez de uma chamad
 
 ## System Call -> Implementação
   
-  -Tipicamente, um número é associado a cada system call que depois é mantido numa tabela indexada de acordo com esses mesmos números.
+  Tipicamente, um número é associado a cada system call que depois é mantido numa tabela indexada de acordo com esses mesmos números.
   
 ### Exemplos de Tipos de System Calls: 
 
