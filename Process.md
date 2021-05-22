@@ -56,6 +56,16 @@ Um processo pode ser encontrado num dos seguintes estados:
 
 ![imagem](https://user-images.githubusercontent.com/62023102/119210666-631ac100-baa5-11eb-9adc-37d15dd5f8b5.png)
 
+# Creação de Processos
+
+Durante a execução,um processo pode criar varios novos processos.
+ - O processo criador é chamado de "Pai" e os novos processos sãos os seus "filhos".
+ - Cada novo processo originado pelo Pai pode criar outros novos processos sendo criada uma "árvore de processos".
+
+A maioria dos sistemas operativos identifica os processos de acordo com um unico `process identifier`
+(pid), que tipicamente é um integer.
+
+- O pid fornece um unico valor por cada processo no sistema, e pode ser usado como um indice para aceder a varios atributos de um processo.
 
 
 
