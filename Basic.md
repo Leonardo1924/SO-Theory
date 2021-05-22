@@ -117,6 +117,37 @@
 
 -`Proteção e Segurança`: Para evitar a interfêrencia entre processos concorrentes ou com o próprio OS e proteger o sistema contra outsiders.
 
-# MultiPograming
+# MultiPogramming
+  - Um dos aspetos mais importantes de um sistema operativo é a capacidadede ter multiplos programas a correr.
   
+  - MultiProgramming aumenta a utilização do CPU pela organização de processos para que o CPU possa sempre executar um processo.
 
+## A ideia é a seguinte:
+
+- O sistema operativo começa a executar processo por processo ordenamente.
+- Eventualmente algum processo terá de esperar por alguma tarefa, tal como uma operação da I/O.
+- Num caso de não existir MultiProgramming, o CPU ficar inativo enquanto esperava.
+- Num Sistema MultiProgramming, o sistema operativo troca para outro processo. Quando um processo precisa de esperar por algo, o CPU volta a trocar para outro processo e assim sucessivamente. Eventualmente o primeiro processo recebe as informação pelas quais estive a aguardar e recupera o CPU.
+- Desde que pelo menos um processo precise de ser executado o CPU nunca fica inativo.
+
+# Multitasking
+  - Como referi anteriormente MultiProgramming aumenta a utilização do CPU.
+  - Multitaskin é uma extensão logica de MultiProgramming que aumenta o tempo de resposta no qual o CPU troca entre processos, permitindo ao utilizador interagir com o processo enquanto este esta a correr.
+
+# Arranque do Sistema
+ ## BootStrap(FirmWare):
+ É carregado quando ligas ou das reboot ao sistema.
+ - Inicializa todos os aspetos do sistema.
+ - Carrega o Kernel do Sistema Operativo e começa a executá-lo.
+ - Estando o Kernel carregado, o sistema pode começar a fornecer serviços ao utilizador.
+
+Completada esta fase, o sistema esta completamente iniciado e preparado para o momento em que algum evento ocorra.
+
+# Proteção do CPU
+
+Não podemos permitir que um programa fique "preso" ou falhe e nunca devolva o controlo do sistema ao utilizador. Para evitar isso podemos utilizar um `Timer`;
+
+## Timer:
+
+Pode ser configurado para interrumper um processo depois de um certo periodo de tempo.
+Se o timer interromper algum procresso o controlo é transferido de imediato para o sistema operativo sendo a interrupção tratada como um fatal error.
