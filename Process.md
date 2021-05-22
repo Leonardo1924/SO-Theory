@@ -56,7 +56,7 @@ Um processo pode ser encontrado num dos seguintes estados:
 
 ![imagem](https://user-images.githubusercontent.com/62023102/119210666-631ac100-baa5-11eb-9adc-37d15dd5f8b5.png)
 
-# Creação de Processos
+# Criação de Processos
 
 Durante a execução,um processo pode criar varios novos processos.
  - O processo criador é chamado de "Pai" e os novos processos sãos os seus "filhos".
