@@ -43,7 +43,15 @@ DeadLock só podem surgir se as próximas 4 condiçioes se mantiverem simultanea
 
 ## Handling DeadLocks
 
-Para garantir que deadlocks nunca ocorem, o sistema pode usar um protocologo para prevenir ou para evitar deadlocks.
+Para garantir que deadlocks nunca ocorem, o sistema pode usar um protocolo para prevenir ou para evitar deadlocks.
 
   - `Prevenção de DeadLocks` -> Métodos que garantem que pelo menus uma das quatro condições ncessárias não pode segura, limitando a forma como os pedidos de recursos podem ser feitos.
-  - `Evitar DeadLock` -> Métodos exigem que o sistema operativo seja 
+  - `Evitar DeadLock` -> Métodos exigem que o sistema operativo seja previamente informado, sobre quais os recursos que um processo ira utilizar durante a ua vida útil, de modo a decidir se o pedido de recursos consegue ser satisfeito ou se deve ser adiado.
+
+Se o sistem a não implementa nenhum dos protocolos anteriores então é provável que ocorra o aparecimento de um deadlock:
+
+  - Deadlock detection -> Método que examina o estado do sistema para determinar se ocorreu algum deadlock e fornece algoritmos para recuperar dos mesmos.
+
+No caso de ausência de métodos para prevenir, evitar ou recuperar de deadlocks chegamos a uma situação em que o sistema se encontra num estado bloqueado e não tem forma nenhuma de reconhecer o que aconteceu.
+
+- Undetected deadlocks -> podem causar a deteriorização da performance do sistema, uma vez que os recursos estão a ser retidos por processos que não podem correr e devido a acumulação de cada vez mais processos que necessitam dos recursos que se encontram bloqueados acabando esses por entrar também em deadlock( eventualmente o sistema irá parar de funcionar e será necessário reinicia-lo manualmente).
