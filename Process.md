@@ -55,7 +55,6 @@ Um processo pode ser encontrado num dos seguintes estados:
 É importante perceber que muitos processos podem estar Read ou Waiting, no entanto apenas 1 processo pode estar a correr no processador de cada vez.
 
 ![imagem](https://user-images.githubusercontent.com/62023102/119210666-631ac100-baa5-11eb-9adc-37d15dd5f8b5.png)
-![Imagem1](https://user-images.githubusercontent.com/62023102/119210724-a70dc600-baa5-11eb-808b-5b33b35de949.png)
 
 
 
