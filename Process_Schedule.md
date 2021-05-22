@@ -79,3 +79,22 @@ FCFS -> Média do tempo de espera.
 FCFS -> Media do tempo de espera 
 
  - (0 + 3 + 6) / 3 = 3 
+
+# Algoritmo Round Robin (RR) 
+
+Parecido com o FCFS mas com preemption, sendo desenhado para sistemas com time-sharing:
+- Cada processo ganha um tempo quantum ou uma "fatia" de tempo (pequena unidade do tempo do CPU);
+- O temporizador(Timer) interrompe cada quantum para agendar o próximo processo, o processo atual é antecipado e adicionado ao final da ready queue (Circular system);
+
+Se o tempo quantum for Q e houverem N processos na ready queue, então quanda processo recebe 1/N do tempo do CPU em pedações de no maximo Q (nenhum processo espera mais do que (N-1)* Q unidades de tempo).
+
+ - Se o Q é grande -> FCFS;
+ - Se o Q for pequeno -> O overhead de mudanças de contexto pode ser muito alto degradando os níveis de utilização do CPU.
+
+## Round Robin (RR) com Q = 4 ;
+
+![imagem](https://user-images.githubusercontent.com/62023102/119230533-83ce2f80-bb14-11eb-824f-e7e8b609d69d.png)
+
+RR -> Tempo Médio de Espera
+
+- (6 + 4 + 7) / 3 = 17/3 = 5.66
