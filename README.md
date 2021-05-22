@@ -10,9 +10,11 @@
  3. [Pipes](./Pipes.md)
  4. [Escalonamento de Processos](./Process_Schedule.md)
  5. [Sincronização de Processos](./Process_Sync.md)
+ 6. [Semáforos](./Semaphores.md)
  
 ## Materia e informações adicionais podem ser encontradas aqui:
- 5. [Threads](./Threads.md)
- 6. [File System](./File_System.md)
- 7. [ResumosMIEI](https://github.com/mendess/ResumosMIEI/tree/master/SO)
+ 
+ 1. [Threads](./Threads.md)
+ 2. [File System](./File_System.md)
+ 3. [ResumosMIEI](https://github.com/mendess/ResumosMIEI/tree/master/SO)
 
