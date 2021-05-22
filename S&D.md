@@ -18,13 +18,32 @@ DeadLocks ocorrem quando estamos a aceder a multiplos recursos.
 
 DeadLocks não são determinísticos e nem sempre acontecem no mesmo pedçado de código
   - Tem de ser exatamente no momento certo (ou momento errado?)
+  
   ![imagem](https://user-images.githubusercontent.com/62023102/119237446-be47c480-bb34-11eb-922f-16ae37c2202a.png)
 
-
+Acho que o Moura não falou deste proxima parte nas aulas logo deixo aqui para os mais curiosos
 
 # Problemas Classicos de Sincronização 
-Acho que o Moura não falou disto logo deixo aqui para os mais curiosos
 
  - [`Bounded Buffer Problem`](https://www.tutorialspoint.com/producer-consumer-problem-using-semaphores)
  - [`Readers and writers Problem`](https://www.tutorialspoint.com/readers-writers-problem)
  - [`Dining philosophers Problem`](https://www.tutorialspoint.com/dining-philosophers-problem-dpp)
+
+## Caracterização do DeadLock
+
+DeadLock só podem surgir se as próximas 4 condiçioes se mantiverem simultaneamente:
+
+  1.`Mutual exclusion`-> Apenas um processo de cada vez pode utilizar um recurso (um processo de pedido deve ser adiado até que o recurso seja libertado);
+  
+  2.`Hold and wait` -> Um processo que detém (pelo menos) um recurso está à espera para adquirir recursos adicionais detidos por outros processos.
+  
+  3.`No preemption` -> um recurso não pode ser antecipado, ou seja, um recurso só pode ser libertado voluntariamente pelo processo que o mantém, depois desse processo ter concluído a sua tarefa.
+  
+  4.`Circular wait` -> Existe um conjunto de processos de espera{P1,P2,...,PN} de tal forma que P1 está à espera de um recurso detido pelo P2, que por sua vez esta a espera de um recurso detido por P3 e assim sucessivamente até chegar a PN que esta retido porque precisa de um recurso do P1.
+
+## Handling DeadLocks
+
+Para garantir que deadlocks nunca ocorem, o sistema pode usar um protocologo para prevenir ou para evitar deadlocks.
+
+  - `Prevenção de DeadLocks` -> Métodos que garantem que pelo menus uma das quatro condições ncessárias não pode segura, limitando a forma como os pedidos de recursos podem ser feitos.
+  - `Evitar DeadLock` -> Métodos exigem que o sistema operativo seja 
