@@ -13,7 +13,7 @@
  6. [Semáforos](./Semaphores.md)
  7. [Starvation and DeadLock](./S&D.md)
  8. [Gestão de Mémoria](./Memory_Management.md)
- 9. [Mémoria Virtual](./Virtual_Memory.md)
+ 9. [Memória Virtual](./Virtual_Memory.md)
 
  
 ## Matéria e informações adicionais podem ser encontradas aqui:
