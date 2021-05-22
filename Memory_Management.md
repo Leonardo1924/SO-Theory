@@ -53,8 +53,16 @@ Precisamos de garantir que cada processo tem um espaço separado na memória.
 
 ## Base and Limit Registers
  
+ Um par de registos definem o espaço de endereço de um processo:
+ - O registo base contem o menor endereço legal da memória fisica.
+ - O registo limit especifica o tamanho.
  
+ Os users não têm permissão para alterar os registos base/limite.
  
+ Sem esta proteção, bugs em qualquer programa podiam levar ao crash de outros programas ou até mesmo do OS.
+ 
+![imagem](https://user-images.githubusercontent.com/62023102/119243191-789ef200-bb5c-11eb-913f-f349e9e43554.png)
+
  
  
  
