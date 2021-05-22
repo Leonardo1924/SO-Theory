@@ -13,5 +13,5 @@
 ## Informações adicionais podem ser encontradas aqui:
  5. [Threads](./Threads.md)
  6. [File System](./File_System.md)
- 7. [GitHub ResumosMIEI](https://github.com/mendess/ResumosMIEI/tree/master/SO)
+ 7. [ResumosMIEI](https://github.com/mendess/ResumosMIEI/tree/master/SO)
 
