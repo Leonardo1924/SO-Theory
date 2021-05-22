@@ -11,6 +11,7 @@
  4. [Escalonamento de Processos](./Process_Schedule.md)
  5. [Sincronização de Processos](./Process_Sync.md)
  6. [Semáforos](./Semaphores.md)
+ 7. [Starvation and DeadLock](./S&D.md)
  
 ## Materia e informações adicionais podem ser encontradas aqui:
  
