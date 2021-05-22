@@ -56,3 +56,66 @@ No caso de ausência de métodos para prevenir, evitar ou recuperar de deadlocks
 
 - `Undetected deadlocks` -> podem causar a deteriorização da performance do sistema, uma vez que os recursos estão a ser retidos por processos que não podem correr e devido a acumulação de cada vez mais e mais processos, que necessitam dos recursos que se encontram bloqueados acabando esses por entrar também em deadlock( eventualmente o sistema irá parar de funcionar e será necessário reinicia-lo manualmente).
 
+## DeadLock Prevention
+
+`Prevenir mutual exclusion` -> tentar evitar recursos non-sharable (cada recurso é tornado sharable e assim um processo nunca precisa de esperar por qualquer recurso).
+
+- `Problema`: Não é muito realista, uma vez que alguns recursos são intrinsecamente non-sharable.
+
+`Prevenir hold and wait` -> Garantir que sempre que um processo solicita recursos, não detém quaisquer outros.
+
+  - Exige que o processo solicite todos os recursos antes da execução começar (prever o futuro é dificil, tende-se a sobreestimar recursos)
+  - Alternativamente, requer que processo liberte todos os recursos que possui antes de solicitar recursos adicionais.
+
+ - `Problema`: Pouca utilização de recursos e starvation são possiveis.
+
+`Prevenir no-preemption`-> libertar recursos voluntáriamente.
+
+- Se o processo P falha ao alocar alguns recursos, então libertamos todos os recursos que P esta a utilizar e apenas quando P ganhar novamente os antigos e os novos recursos é que podemos reiniciar o processo.
+- Alternativamente,  se o processo P falha a alocar alguns recursos, verifcamos se esses recursos estão alocados a um outro processo Q que esteja a espera de recursos adicionais e antecipamos os recursos desejados de Q e alocamo-los para o processo P.
+
+`Problema`: Geralmente não se pode aplicar a recursos como semáforos.
+
+`Preventing circular wait` -> Impor uma "encomenda" total de todos os tipos de recursos e exigir que cada processo solicite recursos numa ordem crescente de enumeração.
+
+`Problema`: Progamadores podem escrever programas sem seguir esse tipo de ordem.
+
+## DeadLock Avoidance
+
+Os métodos para evitar deadlock requer informação adicional a priori, sobre quais os recursos que um processo utilizará durante a sua vida útil.
+
+  - Métodos mais simples é útis requerem que cada processo declare o número máximo de recursos de cada tipo que possa precisar.
+
+Quando um processo solicita um recurso disponível, temos de decidir se a sua alocação imediata deixa o sistema num estado seguro
+
+- Safe state => no deadlock
+- Unsafe stata => possiblidade de deadlock
+
+![imagem](https://user-images.githubusercontent.com/62023102/119239317-38317b00-bb40-11eb-988b-42e9c9a10a4b.png)
+
+
+## Recovey from DeadLock
+
+Para recuperar de um deadlock, podemos aborta processos utilizando dois métodos:
+
+- `Abortar todos os processos em deadlocked` -> O resultado de cálculos parciais feitos por tais processos são perdidos e provavelmente terão de ser refeitos.
+
+- `Abortar um processo de cada vez até que o ciclo de deadlock seja eliminado`-> Incorre em sobrecargas consideráveis, uma vez que o algoritmo de deteção de deadlocks deve ser invocado após cada processo ser abortado.
+
+### Por que ordem devemos decidir abortar?
+
+ 1. Prioridade do processo;
+ 2. Quanto tempo o processo demorou a correr e a concluir;
+ 3. Recursos que o processo usou;
+ 4. Recursos que o processo precisa para completar;
+ 5. Quantos processos terão de ser terminados.
+ 
+ Em alternativa, para recuperar de um deadlock, podemos sucessivamente antecipar alguns recursos dos processos e dá-los a outros até que o ciclo do deadlock seja quebrado.
+ 
+#### Três questões têm de ser abordadas
+
+- `Selecting a victim` -> tentar minimizar os custos tais como o número de recursos que um processo em deadlock possui e a quantidade de tempo que o processo tem consumido até agora.
+- `Rollback` -> Devolver o processo a um estado de segurança (safe state) e reiniciá-lo a partir desse estado. 
+- `Starvation` -> O mesmo processo pode ser sempre escolhido como vítima levando ao estado de starvation e, portanto , a solução mais comum é incluir o número de rollbacks no fator de custo.
+ 
+
