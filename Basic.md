@@ -2,7 +2,7 @@
 
 ## Motivação:
 
-- Hardware por si só não é particularmente facil de usar, sendo portanto necessário algum tempo de software.
+- Hardware por si só não é particularmente facil de usar, sendo portanto necessário algum tipo de software.
 - Diferentes programas, geralmente requerem operações comuns para operar os recursos de hardware.
 - Uma boa ideia seria juntar num unico programa as funções comuns para o controlo e alocação dos recursos de hardware.
 - Este programa comum é conheçido como Sistema Operativo.
