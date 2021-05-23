@@ -167,6 +167,8 @@ Outra solução possivel seria usar esquemas de alocação de memoria não conti
   4. local variables, global variables
   5. stack
   6. symbol table
-  7. arrays
+  7. Arrays
 
 ![imagem](https://user-images.githubusercontent.com/62023102/119263882-cce7b780-bbd8-11eb-8764-35358562fbf5.png)
+
+Note : No próximos capitulo falamos sobre os Esquemas de Segmentation e de Paging. Para depois entrar na parte da matéria referente a memória virtual.
