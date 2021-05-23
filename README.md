@@ -14,7 +14,7 @@
  7. [Starvation and DeadLock](./S&D.md)
  8. [Gestão de Memória](./Memory_Management.md)
  9. [Segmentatin && Paging](./S&P.md)
- 10. [Memória Virtual](./Virtual_Memory.md)
+  10. [Memória Virtual](./Virtual_Memory.md)
 
  
 ## Matéria e informações adicionais podem ser encontradas aqui:
