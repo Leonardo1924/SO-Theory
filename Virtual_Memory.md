@@ -124,7 +124,80 @@ Problema: Mover páginas para a tail é uma operação complexa.
 
 
 
+## Clock Page Replacement
+
+É uma implementação mais eficiente do algoritmo anterior, as páginas são organizadas numa queue circular e existe um pointer que indica qual a proxima página a ser verificada.
+
+Quando é necessário escolher a página que vai ser trocada, o pinter avança até encontrar a página que tem o bit de referência a 0.
+ - A médida que avança vai apagando os bits das outras páginas
+ - Assim que a página for encontrada, ela é substituida e a nova página é inserida na queue circular na posição de onde a outra saiu.
+
+### Encontrará sempre uma página ou vamos ter um loop infinit?
+
+- No pior caso, quando todos os bits estão definidos, o ponteiro passa por toda a fila, é dada a cada página uma second chance e , em seguida, susbtitui a página inicial. 
 
 
+### Exemplo:
 
+![imagem](https://user-images.githubusercontent.com/62023102/119270491-c9fac000-bbf4-11eb-985f-ece38e606b47.png)
 
+## NRU Page Replacement:
+
+NRU (not recently used) este algoritmo é a favor de deixar em memória as páginas que foram usadas recentemente.
+
+Considera um bit de acesso (A) e o bit de escrita (W) (definidos quando a página é modificada ou escrita) tornam-se possiveis as seguintes classes (A , W):
+1. Class 0 = (0,0) não foi recentemente usada nem modificada - Melhor escolha para substituir
+2. Class 1 = (0,1) não foi recentemente usada mas foi modificada - A página teria de ser escrita para o disco antes de ser substituida.
+3. Class 2 = (1,0) recentemente usada mas não modificada - Prob vai ser usada novamente (soon)
+4. Class 3 = (1,1) recentemente usada e modifica - Prob vai ser usada novamente (soon) e ainda teriamos de escrever a página novamente no disco antes de a susbtituir.
+
+A configuração dos bits normalmente é feita pelo hardware
+
+[How to implement a NRU Algotithm](https://www.geeksforgeeks.org/not-recently-used-nru-page-replacement-algorithm/)
+
+### Diferentes Algoritmos
+
+![imagem](https://user-images.githubusercontent.com/62023102/119270823-8a34d800-bbf6-11eb-81a9-3b003479e4ab.png)
+
+## Allocation of Frames
+
+### Como alocar uma quantidade fixa de memória físca entre processos?
+
+- Não podemos alocar mais do que o número total de frames avaliaveis.
+- Devemos alocar um número minimo de frames para manter justa a page-fault rate.
+
+`Equal Allocation` -> Alocar uma parte igual para todos os processos
+ - Se existem 100 frames e 2 processos -> 50/50;
+
+`Proportional Allocation` -> Alocar proporcionalmente ao tamanho dos processos
+- Se existem 100 frames e 2 processos, um dos processos tem 20 pages e outro 180 pages -> dá-mos 10 frames ao primeiro (20/200*100) e 90 frames ao segundo (180/200*100).
+
+`Priotiy allocation`-> Usamos alocação proporcional mas em vez de termos em conta o tamanho do processo, temos em conta a sua prioridade.
+
+-  No caso de page-fault, escolhemos um frame desse processo ou a frame de um um processo de lower priority.
+
+## Global Vs Local Replacement
+
+`Global Replacement` -> Permite a um processo selecionar uma frame de todo o conjunto de frames, mesmo aquelas que estão atualmente alocadas a outro processo. (Um processo pode "roubar" um frame de outro)
+ - O tempo de execução do processo pode variar muito, uma vez que o seu comportamento de pagin depende dos outros processos a executar em simultâneo.
+ - Resulta numa maior produção do sistema, logo é mais comum.
+
+`Local Replacement`-> Cada processo seleciona apenas do seu próprio conjunto alocado de frames
+- Performance mais consistente por processo.
+- Pode sobrecarregar a mémoria, mas não permite o uso das pages menos usadas por outros processos
+
+## Thrashing
+
+Thrashing ocorre quando um processo esta ocupado a trocar pages in and out e demora mas tempo nessa troca do que a executar.
+
+Se um processo não tem frames suficientes a sua taxa de page-fault é bastante alta.
+- Page fault para obter page que precisa.
+- Substitui frames existentes.
+- Uma vez que todas as suas páginas estão em uso ativo, rapidamente deve precisar de trazer de volta a página que foi substituida.
+- Como consenquência, entrámos novamente num estado de page fault (again,again,again) substituindo páginas que vai precisar de ir buscar imediatamente.
+
+Isto leva a uma utlização baixa do CPU.
+
+- O sistema operativo passa maior parte do tempo a fazer swapping para o disco.
+
+Muitas operações de swap acabam por danificar o disco mas é para isso que servem os BACKUPS!!
