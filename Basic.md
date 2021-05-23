@@ -2,59 +2,59 @@
 
 ## Motivação:
 
-- Hardware por si só não é particularmente facil de usar, sendo portanto necessário algum tipo de software.
+- Hardware por si só não é particularmente fácil de usar, sendo portanto necessário algum tipo de software.
 - Diferentes programas, geralmente requerem operações comuns para operar os recursos de hardware.
-- Uma boa ideia seria juntar num unico programa as funções comuns para o controlo e alocação dos recursos de hardware.
-- Este programa comum é conheçido como Sistema Operativo.
+- Uma boa ideia seria juntar num único programa as funções comuns para o controlo e alocação dos recursos de hardware.
+- Este programa comum é conhecido como Sistema Operativo.
 
-### Como podemos definir um Sistema Operativo ou Parte dele?
+### Como podemos definir um Sistema Operativo ou parte dele?
 
 - Não existe um definição universalmente aceite.
 - Uma definição mais restrita seria "Aquele programa que corre o tempo todo num computador", tudo o resto ou é um system program ou uma aplicação.
 
 #### Um Sistema Operativo é o que gere o hardware do Computador:
 
-- Atua como intermediário entre o utilizardo e o hardware.
-- Fornece o basico para aplicações.
-- Alguns sistemas operativos são projetados para tornar o uso do sistema conviniente, outros para tornar o uso do hardware mais eficiente e outros combinam os dois casos.
+- Atua como intermediário entre o utilizador e o hardware.
+- Fornece o básico para aplicações.
+- Alguns sistemas operativos são projetados para tornar o uso do sistema conveniente, outros para tornar o uso do hardware mais eficiente e outros combinam os dois casos.
 
 ## O que devem fazer os Sistemas Operativos?
   
-  - Um sistema operativo foi concebido para maximizar a utlização de recursos e para garantir que todo o tempo do Cpu, memoria e I/O são usados de forma eficiente e justa entre todos os utilizadores.
+  - Um sistema operativo foi concebido para maximizar a utilização de recursos e para garantir que todo o tempo de CPU, memória e I/O são usados de forma eficiente e justa entre todos os utilizadores.
   
-  - O Sistema operativo é projetado principalmente para facilitar a utilização, com mais foco na performance do que na utlização de recursos.
-  - Configurado para correr com nenhuma/minima intervenção do usuario.
+  - O Sistema Operativo é projetado, principalmente, para facilitar a utilização de um sistema, ou seja, contém um maior foco na performance do que na utilização de recursos.
+  - Configurado para correr com a mínima, ou até mesmo nenhuma, intervenção do usuário.
 
 ### Um Sistema pode ser divido em 4 componentes principais:
   
-  - `Hardware:` Os recursos basicos do sistema (Cpu, memoria, I/O devices, ...);
-  - `Sistema Operativo:` Controla e coordena o uso do Hardware entre os diferentes programas e utilizadores;
-  - `Programas:` Definem a maneira como os recursos do sistema são usados para resolver as necessidades do Utilizador( processadores de palavras, browsers, bases de dados, games, compiladores);
+  - `Hardware:` Os recursos básicos do sistema (CPU, memória, I/O devices, ...);
+  - `Sistema Operativo:` Controla e coordena o uso do hardware entre os diferentes programas e utilizadores;
+  - `Programas:` Definem a maneira como os recursos do sistema são usados para resolver as necessidades do Utilizador (processadores de palavras, browsers, bases de dados, jogos, compiladores);
   - `Users`.
 
 ## Principios de um Sistema Operativo:
 
 ### Sistema Operativo como um alocador de recursos/controlador:
 
-  - Atua como um gestor de todos os recursos: Tempo do CPU, espaço em memoria, I/O devices.
-  - Decide entre pedidos em conflito para um uso de recursos mais eficiente e justa.
-  - Previne erros e utilização "impropria" do computador.
-  - Especialmente importante quando muitos utilizadores tem acesso aos mesmos recursos.
+  - Atua como um gestor de todos os recursos: Tempo de CPU, espaço em memória, I/O devices.
+  - Decide entre pedidos em conflito para um uso de recursos mais eficiente e justo.
+  - Previne erros e utilização "imprópria" do computador.
+  - Especialmente importante quando muitos utilizadores têm acesso aos mesmos recursos.
   
 ### Sistema Operativo como um facilitador:
   
   - Fornece serviços que todos precisam.
-  - Torna a programação um processo mais facil, rápido , menos propenso a erros.
-  - Especialmente preocupado com a execução de varios programas.
+  - Torna a programação um processo mais fácil, rápido e menos propenso a erros.
+  - Especialmente preocupado com a execução de vários programas.
   
-### Muitos OS aplicam os principios anteriores:
+### Muitos SO aplicam os princípios anteriores:
   - `Exemplo:` O gestor de ficheiros é necessário para todos os users (facilitador) e tem de ser eficiente e protegido (controlador).
 
 ## Principais Componentes.
-  ### Sistemas Operativos modernos incluem, normalmente, os principais componentes:
+  ### Os SO modernos incluem, normalmente, os principais componentes:
   
   - Gestor de Processos;
-  - Gestor de Memoria;
+  - Gestor de Memória;
   - Gestor de Armazenamento;
   - Gestor de I/O (Input/Output);
     
@@ -64,107 +64,107 @@
    - Criar, suspender, resumir e terminar processos (User/System);
    - Fornecer mecanismos para a comunição de processos;
    - Fornecer mecanismos para a sincronização de processos;
-   - Fornece mecanismo para problemas ligados ao bloqueio de processos;
+   - Fornecer mecanismo para problemas ligados ao bloqueio de processos;
     
-## Gestor de Memoria:
+## Gestor de Memória:
    ### Funções Principais:
    
-   - Alocar e desalocar espaço na memoria conforme necessário.
-   - Ratreio das partes da memoria que estão atualmente a ser utilizadas e por quem.
-   - Decidir que processos/dados mover para dentro e fora da memoria e quando.
+   - Alocar e desalocar espaço na memória conforme necessário;
+   - Rastreio das partes da memória que estão atualmente a ser utilizadas e por quem.
+   - Decidir que processos/dados mover para dentro/fora da memória e quando o fazer.
 
 ## Gestor de Armazenamento:
    ### Funções Principais:
    
-   - Fornece uma visão uniforme (abstrata) e logica da informação no armazenamento ( visão em ficheiros e diretorias logicas).
+   - Fornece uma visão uniforme (abstrata) e lógica da informação no armazenamento (visão em ficheiros e diretorias lógicas).
    - Apoia `primitives` para criar, apagar e manipular ficheiros ou diretorias.
-   - Apoia o controlo de acesso para determinar quem te acesso ou não a determinado ficheiro ou diretoria.
+   - Apoia o controlo de acesso para determinar quem tem, ou não, acesso a um determinado ficheiro ou diretoria.
    - Mapeamento em suportes de armazenamento secundário.
    
 ## Gestor de I/O :
    ### Funções Principais:
    
-   #### Esconder pecularidades de dispositivos de hardware do utlizador:
+   #### Esconder peculiaridades de dispositivos de hardware do utilizador:
    
-   - Geralmente interface dispostivo-driver.
-   - Drivers para dispostivos de hardware especificos.
+   - Geralmente interface dispositivo-driver.
+   - Drivers para dispostivos de hardware específicos.
 
-  #### Responsável pela gestão de memória de I/O incluindo:
+  #### Responsável pela gestão de memória de I/O, incluindo:
   
-  - Buffering - Armazenamento temporario de dados enquanto estão a ser transferidos.
-  - Catching  - Armazenamento de partes de dados em armazenamento rapido para melhor a performance.
+  - Buffering - Armazenamento temporário de dados enquanto estão a ser transferidos.
+  - Catching  - Armazenamento de partes de dados em armazenamento rápido para melhorar a performance.
   - Spooling  - Sobreposição de um output de um processo com o input de outros. 
   
-## Serviços Comuns de um Sistema Operativo:
+## Serviços Comuns de um SO:
 
-  ### Sistemas operativos fornecem um ambiente para a execução de programas e, para isso, fornece servicos especificos para programas e para utilizadores
+  ### SO fornecem um ambiente para a execução de programas oferecendo, para isso, serviços específicos para programas e para utilizadores
   ![imagem](https://user-images.githubusercontent.com/62023102/119206636-95bbbe00-ba93-11eb-96c6-3fe7e2ed6592.png)
   
-  #### Os serviços fornecidos varia entre sistemas operativos mas existem alguns comuns a todos:
+  #### Os serviços fornecidos varia entre SO mas existem alguns comuns a todos:
   
-  - `USER interfaces`: Permitem o funcionamento e controlo eficazes do sistema.
-  - `Programa execution`: Para carregar um programa em memoria e corre-lo.
+  - `User interfaces`: Permitem o funcionamento e controlo eficazes do sistema.
+  - `Program execution`: Para carregar um programa em memória e corrê-lo.
   - `I/O operations`: Fornece um meio para as operações ligadas a I/O.
   - `File Systems`: Permite uma manipulação eficaz de ficheiros e diretorias.
-  - `Communications`: Permite a troca de informação entre processos no mesmo dispostivo ou entre dispostivos.
-  - `Error detection`: Para estar constantemente ciente de possiveis erros que podem ocorrer no CPU/ Memoria / I/O ou programas do utlizador de forma a tomar a ação adequada para assegurar uma computação correta e consistente.
+  - `Communications`: Permite a troca de informação entre processos no mesmo dispositivo ou entre dispositivos.
+  - `Error detection`: Para estar constantemente ciente de possíveis erros que podem ocorrer no CPU|Memória|I/O ou programas do utilizador de forma a tomar a ação adequada para assegurar uma computação correta e consistente.
 
 #### Outros Serviços existentes não para proveito do utilizador mas do sistema em si:
 
--`Alocação de Recursos`: Quando multiplos processos se encontram a correr de forma concorrente, os recursos disponiveis (CPU/MEMORY,File Storage ...) devem ser alocados de forma eficiente para cada um dos processos.
+-`Alocação de Recursos`: Quando múltiplos processos se encontram a correr de forma concorrente, os recursos disponíveis (CPU/MEMORY, File Storage, ...) devem ser alocados de forma eficiente para cada um dos processos.
 
 -`Accounting` : Para acompanhar a quantidade e os tipos de recursos utilizados por cada utilizador.
 
--`Proteção e Segurança`: Para evitar a interfêrencia entre processos concorrentes ou com o próprio OS e proteger o sistema contra outsiders.
+-`Proteção e Segurança`: Para evitar a interferência entre processos concorrentes ou com o próprio SO e proteger o sistema contra outsiders.
 
-# MultiPogramming
-  - Um dos aspetos mais importantes de um sistema operativo é a capacidadede ter multiplos programas a correr.
+# MultiProgramming
+  - Um dos aspetos mais importantes de um SO é a capacidadede de ter múltiplos programas a correr simultaneamente.
   
   - MultiProgramming aumenta a utilização do CPU pela organização de processos para que o CPU possa sempre executar um processo.
 
 ## A ideia é a seguinte:
 
-- O sistema operativo começa a executar processo por processo ordenamente.
-- Eventualmente algum processo terá de esperar por alguma tarefa, tal como uma operação da I/O.
-- Num caso de não existir MultiProgramming, o CPU ficar inativo enquanto esperava.
-- Num Sistema MultiProgramming, o sistema operativo troca para outro processo. Quando um processo precisa de esperar por algo, o CPU volta a trocar para outro processo e assim sucessivamente. Eventualmente o primeiro processo recebe as informação pelas quais estive a aguardar e recupera o CPU.
-- Desde que pelo menos um processo precise de ser executado o CPU nunca fica inativo.
+- O SO começa a executar processo a processo ordeiramente;
+- Eventualmente, algum processo terá de esperar por alguma tarefa (por exemplo, uma operação I/O);
+- Se não existisse MultiProgramming, a CPU teria de ficar inativa enquanto esperava.
+- Num Sistema MultiProgramming, o SO troca para outro processo. Quando um processo precisa de esperar por algo, a CPU volta a trocar para outro processo e assim sucessivamente. Eventualmente, o primeiro processo recebe as informação pelas quais se encontrava a aguardar e recupera a CPU.
+- Assim sendo, desde que, pelo menos, um processo precise de ser executado a CPU nunca fica inativa.
 
 # Multitasking
-  - Como referi anteriormente MultiProgramming aumenta a utilização do CPU.
-  - Multitaskin é uma extensão logica de MultiProgramming que aumenta o tempo de resposta no qual o CPU troca entre processos, permitindo ao utilizador interagir com o processo enquanto este esta a correr.
+  - Como referido anteriormente, MultiProgramming aumenta a utilização da CPU.
+  - Multitasking é uma extensão logica de MultiProgramming que aumenta o tempo de resposta na qual a CPU troca entre processos, permitindo ao utilizador interagir com o processo enquanto este se encontra a correr.
 
 # Arranque do Sistema
- ## BootStrap(FirmWare):
- É carregado quando ligas ou das reboot ao sistema.
- - Inicializa todos os aspetos do sistema.
- - Carrega o Kernel do Sistema Operativo e começa a executá-lo.
+ ## Bootstrap(Firmware):
+ É carregado quando se liga ou é dado reboot ao sistema.
+ - Inicializa todos os aspetos do sistema;
+ - Carrega o Kernel do Sistema Operativo e começa a executá-lo;
  - Estando o Kernel carregado, o sistema pode começar a fornecer serviços ao utilizador.
 
-Completada esta fase, o sistema esta completamente iniciado e preparado para o momento em que algum evento ocorra.
+Completada esta fase, o sistema está completamente iniciado e preparado para o momento em que algum evento ocorra.
 
-# Proteção do CPU
+# Proteção da CPU
 
 Não podemos permitir que um programa fique "preso" ou falhe e nunca devolva o controlo do sistema ao utilizador. Para evitar isso podemos utilizar um `Timer`;
 
 ## Timer:
 
-Pode ser configurado para interrumper um processo depois de um certo periodo de tempo.
-Se o timer interromper algum procresso o controlo é transferido de imediato para o sistema operativo sendo a interrupção tratada como um fatal error.
+Pode ser configurado para interromper um processo depois de um certo período de tempo.
+Se o timer interromper algum processo, o controlo é transferido de imediato para o SO sendo a interrupção tratada como um fatal error.
 
 # System Calls
 
-As `System Calls` funcionam como uma interface para os serviços do Sistema Operativo.
-São, na maior parte dos casos acedidas através de uma API em vez de uma chamada direta ao sistema.
+As `System Calls` funcionam como uma interface para os serviços do SO.
+São, na maior parte dos casos, acedidas através de uma API em vez de uma chamada direta ao sistema.
 
-## Por que razão é melhor usar uma API que uma chamada direta ao sistema?
+## Por que razão é melhor usar uma API ao invés de uma chamada direta ao sistema?
   
   - O mesmo programa deve compilar e correr num outro sistema que suporta essa API.
-  - As System Calls podem ser mais detalhas e dificies de trabalhar quando comparadas a API disponivel para o programador. 
+  - As System Calls podem ser mais detalhas e difícies de trabalhar quando comparadas às API disponiveis para o programador. 
 
 ## System Call -> Implementação
   
-  Tipicamente, um número é associado a cada system call que depois é mantido numa tabela indexada de acordo com esses mesmos números.
+  Tipicamente, um número é associado a cada System Call, em seguida, esse número é mantido numa tabela indexada de acordo com os números atribuídos a cada System Call.
   
 ### Exemplos de Tipos de System Calls: 
 
@@ -173,7 +173,7 @@ São, na maior parte dos casos acedidas através de uma API em vez de uma chamad
   - Manipulação de Ficheiros;
   - Manipulação de Dispositivos;
   - Manutenção de informação;
-  - Comunicação(Pipes);
+  - Comunicação (Pipes);
   - Proteção;
 
 ![imagem](https://user-images.githubusercontent.com/62023102/119208669-2ba71700-ba9b-11eb-9649-5c4199b6b5aa.png)
