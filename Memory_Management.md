@@ -134,3 +134,39 @@ A geralização é o esquema de partição variável
 ![imagem](https://user-images.githubusercontent.com/62023102/119263057-6b721980-bbd5-11eb-91b9-61bec1995950.png)
 
 
+# Internal Fragmentation
+
+Fragementação interna existe quando a memória alocado a um processo é ligeiramente maior do que memória solicitada.
+ - A diferença de tamanhos esta relaciona com memória que não é usada que é interna a partição.
+
+É o resultado de tentar evitar o overhead quando se mantém o rasto de pequenos buracos na memória.
+  `Exemplo:`
+   - Considera que tens um buraco na memória para 1000 bytes e o processo que está a pedir essa parte da memória necessita de 998 bytes, ficamos um um buraco mais pequeno que agora só tem espaço para 2 bytes -> é melhor ignorar esse pequeno buraco do que lidar com ele.
+   - Um aproximação geral para evitar pequenos espaços na memória é separar a memória fisica em blocos de tamanho fixo é alocar unidades de memória baseado no tamanho do bloco
+
+# External Fragmentation
+
+Fragementação externa acontece quando existe espaço suficiente na memória para satisfazer o pedido de alocação no então o espaço disponível não é contíguo.
+  - O armazenamento esta fragementado num número grande de pequenos buracos (small holes)
+  - No pior caso , podemos ter sempre um espaço de dois em dois processos em toda a memória.
+  
+Uma possivel solução seria "baralhar"(shuffle) a memória para compactar toda a que está livre num único espaço.
+
+- Só é possivel com alocação dinâmica, feita em tempo de execução, e nós estamos a usar double buffering para operações de I/O pendentes
+- Pode ser muito dispendioso 
+
+Outra solução possivel seria usar esquemas de alocação de memoria não contiguos.
+ -`Segmentation` e `Paging` são dois tipos desse esquema.
+ 
+ ## Programmer View of Memory
+ 
+ A memória é vista como uma coleção de unidades lógicas separadas e de tamanho variável sem nenhuma ordem necessária entre elas.
+  1. Main Program
+  2. procedures, functions
+  3. objects, methods
+  4. local variables, global variables
+  5. stack
+  6. symbol table
+  7. arrays
+
+![imagem](https://user-images.githubusercontent.com/62023102/119263882-cce7b780-bbd8-11eb-8764-35358562fbf5.png)
