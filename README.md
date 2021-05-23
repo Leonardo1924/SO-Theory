@@ -4,7 +4,7 @@
 # Índice:
 
 
- 0. [Conceitos Basicos](./Basic.md)
+ 0. [Conceitos Básicos](./Basic.md)
  1. [Ficheiros](https://github.com/mendess/ResumosMIEI/blob/master/SO/Ficha1.md)
  2. [Processos](./Process.md)
  3. [Pipes](./Pipes.md)
@@ -13,8 +13,8 @@
  6. [Semáforos](./Semaphores.md)
  7. [Starvation and DeadLock](./S&D.md)
  8. [Gestão de Memória](./Memory_Management.md)
- 9. [Segmentatin && Paging](./S&P.md)
-  10. [Memória Virtual](./Virtual_Memory.md)
+ 9. [Segmentation && Paging](./S&P.md)
+ 10. [Memória Virtual](./Virtual_Memory.md)
 
  
 ## Matéria e informações adicionais podem ser encontradas aqui:
