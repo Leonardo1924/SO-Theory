@@ -171,4 +171,6 @@ Outra solução possivel seria usar esquemas de alocação de memoria não conti
 
 ![imagem](https://user-images.githubusercontent.com/62023102/119263882-cce7b780-bbd8-11eb-8764-35358562fbf5.png)
 
-Note : No próximos capitulos falamos sobre os Esquemas de Segmentation e de Paging. Para depois entrar na parte da matéria referente a memória virtual.
+`Note` : Nos próximos capitulos falamos sobre os Esquemas de `Segmentation` e de `Paging`. Para depois entrar na parte da matéria referente a memória virtual.
+
+
