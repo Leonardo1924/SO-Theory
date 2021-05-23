@@ -116,3 +116,20 @@ Para começar considera o seguinte esquema para mapeamento:
 
  - Pode, se usarmos double buffering e a opereção de I/O for executada dentro de bufffers do kernel (transferências entre buffers do kernel e buffers de memória de processo, só ocorrem quando o processo é trocado back in.)
 
+## Contiguous Memory Allocation
+
+Alocação contígua de memória é um método inicial em que cada processo está contido numa única secção contígua de memória.
+
+Um esquema simples é dividir a memória em varías partições de tamanho fixo.
+ - Cada partição contém exatamente 1 processo.
+ - O grau de multiprogramação está ligado pelo número de partições
+
+A geralização é o esquema de partição variável
+
+-  Cada partição contém na mesma um único processo mas o tamanho da partição é exatamente exato ao que o processo precisa.
+-  O Kernel mantém uma tabela que indica que partes da memória estão ocupados e que partes estão disponíveis (memory holes).
+
+## Variable-Partition Scheme
+
+![imagem](https://user-images.githubusercontent.com/62023102/119262994-2c43c880-bbd5-11eb-8d8d-e96c98b347db.png)
+
