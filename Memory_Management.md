@@ -131,5 +131,6 @@ A geralização é o esquema de partição variável
 
 ## Variable-Partition Scheme
 
-![imagem](https://user-images.githubusercontent.com/62023102/119262994-2c43c880-bbd5-11eb-8d8d-e96c98b347db.png)
+![imagem](https://user-images.githubusercontent.com/62023102/119263057-6b721980-bbd5-11eb-91b9-61bec1995950.png)
+
 
