@@ -71,3 +71,48 @@ O conceito de um espaço de endereço lógico que está ligado a um espaço de e
 - `Logical Address`: Endereço gerado pelo CPU;
 - `Physical Address`: Endereço visto pela unidade de memória;
  
+ O conjunto de todos os endereços lógicos gerados por um programa é o espaço de endereço lógico e o conjunto de todos os endereços físicos correspondentes a cada um dos endereços lógicos é o espaço de endereços físicos.
+
+No tempo de compilação e de load, o "esquema" de ligação de endereços gera os mesmos endereços lógicos e físicos.
+
+No tempo de execução, o "esquema" de ligação de endereços gera um diferente endereço lógico e físico.
+
+# Memory Management Unit (MMU)
+
+O dispositivo de hardware que no tempo de execução mapeia endereços lógicos para físicos é chamado de MMU (Memory-Management Unit).
+
+- Existem diferentes métodos para completar tal mapeamento.
+
+Para começar considera o seguinte esquema para mapeamento:
+
+- O registo base agora é chamado de registo de deslocalização (relocation register)
+- O valor nesse registo é adicionado a todos os endereços gerados por um user process no momento em que o endereço é enviado para a memória.
+
+
+# Swapping 
+
+## O que acontece se nem todos os processos tiverem espaço na memória?
+  - Usa uma forma extrema de context switch onde algums processos em memória são temporariamente trocadas da memória para uma backing store.
+  - Torna possivel para o espaço total de endereços fisicos de todos os processos exceder a verdadeira memória fisica do sistema.
+
+`Backing store` -> Geralmente um disco rápido e grande o suficiente ppara acomodar cópias de todas as imagens de memória para todos os utilizadores.
+
+- A read queue mantém os processos ready-to-run dos quais têm imagens de mémoria na backing store.
+
+`Dispatcher`-> Verifica se um processo esta agendado para executar na mémoria.
+  - Se não estiver, e se não houver memória livre nessa região, o dispatcher troca o processo atual em memória pelo processo desejado.
+  -O tempo do Context-switch num sistema de swapping é bastante elevado.
+
+ Maior parte do tempo de swap é na verdade tempo de transferência(temos de trocar em ambos out e in)
+ - O tempo total de transferência é diretamente proporcional a quantidade de memória trocada.
+
+![imagem](https://user-images.githubusercontent.com/62023102/119259021-22fe3000-bbc4-11eb-8b1c-e88ecd719ed9.png)
+
+### Um processo trocado para a backing store precisa de ser colocado no mesmo endereço fisico de onde foi retirado?
+
+- Não!! , se foi usada alocação dinâmica para mudar o relocation register.
+
+### Pode um processo que esta a espera de uma operação de I/O ser swapped out?
+
+ - Pode, se usarmos double buffering e a opereção de I/O for executada dentro de bufffers do kernel (transferências entre buffers do kernel e buffers de memória de processo, só ocorrem quando o processo é trocado back in.)
+
