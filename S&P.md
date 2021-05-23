@@ -136,5 +136,4 @@ A partilha pode ser dada em ambos os niveis
 
 
 #### Nota:
-
-`Page fault` -> é um tipo de exceção levantada pelo hardware quando este a correr o programa acede a uma pagina da memória que não foi mapeada pelo MMU no espaço do endereço virtual do processo.
+A definição de `Page fault` vai ser vista no proximo capítulo onde é abordada a memória virtual.
