@@ -100,7 +100,7 @@
   ### SO fornecem um ambiente para a execução de programas oferecendo, para isso, serviços específicos para programas e para utilizadores
   ![imagem](https://user-images.githubusercontent.com/62023102/119206636-95bbbe00-ba93-11eb-96c6-3fe7e2ed6592.png)
   
-  #### Os serviços fornecidos varia entre SO mas existem alguns comuns a todos:
+  #### Os serviços fornecidos variam entre SO mas existem alguns comuns a todos:
   
   - `User interfaces`: Permitem o funcionamento e controlo eficazes do sistema.
   - `Program execution`: Para carregar um programa em memória e corrê-lo.
