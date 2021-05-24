@@ -2,7 +2,7 @@
 
 ## Conceitos:
 
-`Starvation`(indefinite blocking) corresponde a situaçãpo em que um processo aguarda indefinidamente por um evento que pode nunca ocorrer.
+`Starvation`(indefinite blocking) corresponde a situação em que um processo aguarda indefinidamente por um evento que pode nunca ocorrer.
 
 `DeadLock`é uma situação em que um conjunto de processos está à espera indefinidamente de um evento que nunca irá ocoorer porque esse evento só pode ser causado por um dos processos em espera nesse conjunto.
 
@@ -45,7 +45,7 @@ DeadLock só podem surgir se as próximas 4 condiçioes se mantiverem simultanea
 
 Para garantir que deadlocks nunca ocorem, o sistema pode usar um protocolo para prevenir ou para evitar deadlocks.
 
-  - `Prevenção de DeadLocks` -> Métodos que garantem que pelo menus uma das quatro condições ncessárias não pode segura, limitando a forma como os pedidos de recursos podem ser feitos.
+  - `Prevenção de DeadLocks` -> Métodos que garantem que pelo menos uma das quatro condições ncessárias não pode segura, limitando a forma como os pedidos de recursos podem ser feitos.
   - `Evitar DeadLock` -> Métodos exigem que o sistema operativo seja previamente informado, sobre quais os recursos que um processo ira utilizar durante a ua vida útil, de modo a decidir se o pedido de recursos consegue ser satisfeito ou se deve ser adiado.
 
 Se o sistem a não implementa nenhum dos protocolos anteriores então é provável que ocorra o aparecimento de um deadlock:
