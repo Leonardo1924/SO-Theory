@@ -122,18 +122,18 @@ FCFS -> Tempo médio de espera
 
 # Escalonamento Prioritário
 
-É associado um número prioritario a cada processo e o CPU é alocado para o processo para o processo com a maior prioridade.
+É associado um número prioritario a cada processo e o CPU é alocado para o processo com a maior prioridade.
 
 - Processos de igual prioridade são escalonados pela ordem de FCFS.
 - SJF pode ser visto como um algoritmo de prioridade.
 
 Escalonamento prioritário pode ser:
- - Preemptive, antecipa o CPU se a prioridade de um processo recem chagado é maior que a prioridade do processo atualmente a correr.
- - NonPreemptive, permite ao atual processo acabar o seu CPU burst.
+ - Preemptive, antecipa o CPU se a prioridade de um processo recém chegado é maior que a prioridade do processo atualmente a correr.
+ - Non-Preemptive, permite ao processo atual acabar o seu CPU burst.
 
 Principal Problema -> Indefinite Blocking ou Starvation.
  - Processos de baixa prioridade podem nunca ser executados e esperar indefinitivamente
- - A solução mais comum é o envelhecimento (aging), aumenta a prioridade dos processos pouco a pouco até que acabam por executar e terminar.
+ - A solução mais comum é o envelhecimento (aging), aumentando a prioridade dos processos pouco a pouco até que acabam por ser executados e terminar.
 
 ![imagem](https://user-images.githubusercontent.com/62023102/119231888-e1fe1100-bb1a-11eb-9fa9-f359b0c1cb82.png)
 
