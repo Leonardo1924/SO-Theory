@@ -2,12 +2,12 @@
 
 ## Background:
 
-A memória(ou memória principal) consiste num grande array de bytes cada um com o seu proprio endereço.
- - A unidade de memória vê apenas um fluxo de endereções de memória e não sabe como são gerados ou para que servem
+A memória(ou memória principal) consiste num grande array de bytes cada um com o seu próprio endereço.
+ - A unidade de memória vê apenas um fluxo de endereços de memória e não sabe como são gerados ou para que servem
 
 Memória e Registos são o único tipo de armazenamento a que o CPU pode aceder diretamente.
 
-- Os programas deve ser trazidos do disto para a memoria para ser corridos
+- Os programas deve ser trazidos do disto para a memória para ser corridos
 - O CPU, em seguida, recolhe as instruções da memória de acordo com o counter do programa.
 - Estas instruções podem causar carregamento/armazenamento adicional de/para endereços de memória específicos
 
@@ -15,12 +15,12 @@ Memória e Registos são o único tipo de armazenamento a que o CPU pode aceder 
 
 A maioria dos CPUs consegue descodifcar as instruções e realizar operações simples em registos à taxa de uma ou mais operações por CPU clock cycle
 
-A memoria é acessida pelo memory bus o que pode levar algums clock cycles do CPU
+A memoria é acedida pelo memory bus o que pode levar algums clock cycles do CPU
 
-Cache encontra-se entre a memory e os registos do CPU 
+Cache encontra-se entre a memoria e os registos do CPU 
   - Permite aumentar a velocidade de acesso a memóra 
 
-Nota: Tudo o que foi menciona anteriormente ja terá sido abordado na caderia de Arquitetura de Computadores
+Nota: Tudo o que foi mencionado anteriormente ja terá sido abordado na caderia de Arquitetura de Computadores
 
 ## Memory Space
 
