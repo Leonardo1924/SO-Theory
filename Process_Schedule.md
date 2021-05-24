@@ -108,7 +108,7 @@ Associa cada processo com o tamanho do seu proximo CPU burst e usa estes tamanho
 SJF é ideal porque dá sempre o tempo mínimo de espera médio para um determinado conjuntos de processos
 
 - Mover o processo mais curto para antes de um longo diminui o tempo de espera do processo mais curto no entanto aumenta o tempo de espera do processo mais longo.
-- A dificuldade é saber o tamanho do proimo CPU burst.
+- A dificuldade é saber o tamanho do próximo CPU burst.
 
 ![imagem](https://user-images.githubusercontent.com/62023102/119230928-4b2f5580-bb16-11eb-8723-d9b94aebe892.png)
 
