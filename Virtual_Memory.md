@@ -46,7 +46,7 @@ Típicamente, um processo começa num determinado endereço lógico -> digamos, 
 ## Page Fault
 
 A `page fault` ocorre quando o hardware de paging acede a uma pagina marcada como invalida.
-  - Na tradução do endereço pela page table, o paging hardeare irá notar que um bit inválido foi coloca, causando uma trap(exception/fault) no sistema operativo.
+  - Na tradução do endereço pela page table, o paging hardware irá notar que um bit inválido foi coloca, causando uma trap(exception/fault) no sistema operativo.
 
 O procedimento para resolver uma page faul é simples:
 
