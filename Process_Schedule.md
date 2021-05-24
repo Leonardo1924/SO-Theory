@@ -32,9 +32,9 @@ Escalonamento do tipo preemptive requer especial hardware como por exemplo um ti
 
 O escalonamento preemptive pode resultar em condições de corrida (isto é , o output depende da sequência de execução de outros eventos incontroláveis)
 
-  - Enquanto que um processo esta a atualizar dados, o mesmo é temporariamente interrumpido para que um segundo processo possa correr. O segundo processo pode tentar ler os mesmos dados, que podem estar num estado inconsistente.
+  - Enquanto que um processo esta a atualizar dados, o mesmo é temporariamente interrompido para que um segundo processo possa correr. O segundo processo pode tentar ler os mesmos dados, que podem estar num estado inconsistente.
 
-- O processo de uma system call pode involver a mudança de alguns dados importantes ao nivel do kernel. Se o processo for temporariamente interrumpido (preempted) no meio destas mudanças e o kernel precisar de ler ou modificar o mesma estrutura, então vais estar perante um CAOS. 
+- O processo de uma system call pode involver a mudança de alguns dados importantes ao nivel do kernel. Se o processo for temporariamente interrompido (preempted) no meio destas mudanças e o kernel precisar de ler ou modificar o mesma estrutura, então vais estar perante um CAOS. 
 
 Uma vez que interrupções podem ocorrer a qualquer momento, essas secções de codigo deve ser guardadas de acessos concorrentes por vários processos e para que essas interrupções sejam desativadas ao entrar nessas secções e apenas reativadas à saida.
 
