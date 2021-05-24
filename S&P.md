@@ -72,7 +72,7 @@ Para carregar um processo de N pages, precisamos de encontrar N frames livres.
 ## Paging Model of Memory
 
 Uma page Table acompanha todas as pages  num processo em particular.
- - Cada entada contem o frame correspondente na memória física
+ - Cada entrada contem o frame correspondente na memória física
  - Traduz endereços logicos em físicos.
 
 ![imagem](https://user-images.githubusercontent.com/62023102/119267304-de838c00-bbe5-11eb-9b86-43f198d5360b.png)
