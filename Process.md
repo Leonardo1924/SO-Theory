@@ -38,7 +38,7 @@ Um programa torna-se um processo quando está carregado na memória.
 #### Exemplo:
 
 Se o mesmo utilizador abrir várias cópias do programa Firefox:
- - Cada óopia é considerada um processo diferente e embora a parte da text section seja equivalente, a data, a heap e a stack podem variar.
+ - Cada cópia é considerada um processo diferente e embora a parte da text section seja equivalente, a data, a heap e a stack podem variar.
 
 ## Estados de um Processo:
 
