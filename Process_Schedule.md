@@ -19,7 +19,7 @@ A execução de um processo pode parecer um ciclo de execução do CPU e tempos 
 Decisões de Escalonamento pode ocorrer quando um processo:
  1. Troca do estado de running para o estado de waiting (como resultado de um I/O request);
  2. Troca do estado de waiting para o estado de ready (como resultado de um I/O completion);
- 3. Troca do estado de running para o estado de ready (como o resuktado de um interrupt);
+ 3. Troca do estado de running para o estado de ready (como o resultado de um interrupt);
  4. Simplesmente termina.
 
 O escalonamento escolhe entre todos os processos na Lista-Ready e aloca o CPU para um deles.
