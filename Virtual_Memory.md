@@ -13,7 +13,7 @@ O código precisa de estar em memória para executar, mas raramente se usa progr
  - Resume a memória principal num extremamente grande e uniforme array de armazenamento.
  - Liberta os programadores de preocupações como as limitações da armazenamento em memória.
 
-Executar um procesos que não se encontra totalmente em memória têm beneficios para o utilizador e para o Sistema Operativo
+Executar um processo que não se encontra totalmente em memória têm beneficios para o utilizador e para o Sistema Operativo
 - Permite menos uso da memória
 - Permite a criação mais eficiente de projetos
 - Menor uso de operações de I/O necessárias para o load ou swaps de processos para a memória
