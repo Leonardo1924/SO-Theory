@@ -128,7 +128,7 @@ Problema: Mover páginas para a tail é uma operação complexa.
 
 É uma implementação mais eficiente do algoritmo anterior, as páginas são organizadas numa queue circular e existe um pointer que indica qual a proxima página a ser verificada.
 
-Quando é necessário escolher a página que vai ser trocada, o pinter avança até encontrar a página que tem o bit de referência a 0.
+Quando é necessário escolher a página que vai ser trocada, o pointer avança até encontrar a página que tem o bit de referência a 0.
  - A médida que avança vai apagando os bits das outras páginas
  - Assim que a página for encontrada, ela é substituida e a nova página é inserida na queue circular na posição de onde a outra saiu.
 
@@ -163,7 +163,7 @@ A configuração dos bits normalmente é feita pelo hardware
 
 ### Como alocar uma quantidade fixa de memória físca entre processos?
 
-- Não podemos alocar mais do que o número total de frames avaliaveis.
+- Não podemos alocar mais do que o número total de frames avaliáveis.
 - Devemos alocar um número minimo de frames para manter justa a page-fault rate.
 
 `Equal Allocation` -> Alocar uma parte igual para todos os processos
