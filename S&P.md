@@ -63,7 +63,7 @@ Devido a estas vantagens, pagin é usado de varias formas na maioria dos Sistema
 
 A ideia por detras deste esquema é organizar a memória em blocos de tamanho fixo.
  - Dividir a memória logica em blocos de tamanho fixo chamados `pages`.
- - Dividir a memória físca ( e a backing store) em blocos do mesmo tamanho chamados `frames`.
+ - Dividir a memória física ( e a backing store) em blocos do mesmo tamanho chamados `frames`.
 
 Para carregar um processo de N pages, precisamos de encontrar N frames livres.
 - Pages não têm de ser carregas num conjunto contiguo de frames.
