@@ -35,18 +35,18 @@ Acho que o Moura também não falou disto.
 - Evita uso desnecessário de I/O
 - Menos uso de mémoria e menos uso de I/O
 - Resposta mais rápida
-- Paginas que nunca são acedidas nunca são carregas na memória física (normalmente essas páginas residem numa memória secondária).
+- Paginas que nunca são acedidas nunca são carregadas na memória física (normalmente essas páginas residem numa memória secondária).
 
 ## Virtual Address Space of a process
 
 Refere-se a visão lógica (virtual) de como um processo é guardado em memória.
 
-Típicamente, um processo começa num determinado endereço lógico -> digamos, endereço 0 -> e existe em memória contígua até que o endereço lógico mais alto permitido.
+Típicamente, um processo começa num determinado endereço lógico -> digamos, endereço 0 -> e existe em memória contígua até ao endereço lógico mais alto permitido.
 
 ## Page Fault
 
 A `page fault` ocorre quando o hardware de paging acede a uma pagina marcada como invalida.
-  - Na tradução do endereço pela page table, o paging hardware irá notar que um bit inválido foi coloca, causando uma trap(exception/fault) no sistema operativo.
+  - Na tradução do endereço pela page table, o paging hardware irá notar que um bit inválido foi colocado, causando uma trap(exception/fault) no sistema operativo.
 
 O procedimento para resolver uma page faul é simples:
 
@@ -67,7 +67,7 @@ Pode acontecer de não exister uma free frame para carregar a página pretendida
   - A solução mais comum é `page replacement` ( encontra alguma página que não esta a ser usada e liberta-a).
 
 `Page replacement` completa a sepação entre memória logica e memória fisica
-- Um grande memória virtual pode ser fornecida numa memória física mais pequena.
+- Uma grande memória virtual pode ser fornecida numa memória física mais pequena.
 - A mesma página pode ser levada para a memória varias vezes
 
 Queremos um algoritmo de page replacement que resulte num número mínimo de page faults
