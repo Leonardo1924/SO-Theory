@@ -84,7 +84,7 @@ Todos os endereços logicso são divididos em 2 partes:
 - `Page Number (p)` : index na page table.
 - `Page offset (d)` : deslocamento dentro da página
 
-O endereço vase na page table combinado com o page offset definem o endereço físico de memória que é enviado para a unidade de memória.
+O endereço base na page table combinado com o page offset definem o endereço físico de memória que é enviado para a unidade de memória.
 
 Se o tamanho do espaço do endereço lógico é 2^m e o tamanho da pagina é 2^n bytes (m > n), então a high-order m-n bits do endereço logico designa o `page number (p)`, e a lower-order de n bits indica a `page offset (d)`.
 
@@ -103,7 +103,7 @@ O sistema operativo intervem 4 vezes na paginação:
 
 2. `Execução do Processo`
  - Re-inicializar a MMU para o novo processo.
- - Limpar a TLB
+ - Limpar a TLB (Translation lookaside buffer)
 
 3.`Na Page Fault`
  - Determinar o endereço virtual causador da page fault
@@ -132,7 +132,7 @@ Os endereços lógicos consistem mais uma vez em tuplos:
 
 A partilha pode ser dada em ambos os niveis
  - Partilhar um segmento completo por ter a mesma base em duas tabelas de segmento.
- - Partilhar uma frame por ter a mesma frame reference nas duas tabelas de paginação.
+ - Partilhar uma frame por ter a mesma `frame reference` nas duas tabelas de paginação.
 
 
 #### Nota:
