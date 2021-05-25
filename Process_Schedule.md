@@ -86,7 +86,7 @@ Parecido com o FCFS mas com preemption, sendo desenhado para sistemas com time-s
 - Cada processo ganha um tempo quantum ou uma "fatia" de tempo (pequena unidade do tempo do CPU);
 - O temporizador(Timer) interrompe cada quantum para agendar o próximo processo, o processo atual é antecipado e adicionado ao final da ready queue (Circular system);
 
-Se o tempo quantum for Q e houverem N processos na ready queue, então quanda processo recebe 1/N do tempo do CPU em pedações de no maximo Q (nenhum processo espera mais do que (N-1)* Q unidades de tempo).
+Se o tempo quantum for Q e houverem N processos na ready queue, então cada processo recebe 1/N do tempo do CPU em pedações de no maximo Q (nenhum processo espera mais do que (N-1)* Q unidades de tempo).
 
  - Se o Q é grande -> FCFS;
  - Se o Q for pequeno -> O overhead de mudanças de contexto pode ser muito alto degradando os níveis de utilização do CPU.
