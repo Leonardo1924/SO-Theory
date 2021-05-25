@@ -17,7 +17,7 @@ Um semáforo é uma ferramente de sincronização usada para controlar o acesso 
 
 ## Operações com Semáforos:
 
-Semáforos são acedidos atrás de duas operações atómicas padrão:
+Semáforos são acedidos atráves de duas operações atómicas padrão:
 - `Wait()` -> Espera que o semáforo se torne positivo e depois decrementa-o por 1.
 - `Signal()` -> Operação que incrementa o smáforo por 1.
 
