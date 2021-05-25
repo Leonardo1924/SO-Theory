@@ -10,7 +10,7 @@ O código precisa de estar em memória para executar, mas raramente se usa progr
 
 `Virtual Memory` é uma técnica que permite a execução de processos que não estão totalmente em memória.
 
- - Resumo a memória principal num extremamente grande e uniforme array de armazenamento.
+ - Resume a memória principal num extremamente grande e uniforme array de armazenamento.
  - Liberta os programadores de preocupações como as limitações da armazenamento em memória.
 
 Executar um procesos que não se encontra totalmente em memória têm beneficios para o utilizador e para o Sistema Operativo
