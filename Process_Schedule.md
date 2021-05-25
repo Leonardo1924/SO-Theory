@@ -147,6 +147,6 @@ Divide a read queue em partições gerando varias queues.
 
 - Cada queue tem prioridade absoluta sobre a queue mais abaixo dessa.
 
-- Cada queue tem um certa quantidade de tempo de CPU que depois é devido entre os processos
+- Cada queue tem um certa quantidade de tempo de CPU que depois é divido entre os processos
 
 ![imagem](https://user-images.githubusercontent.com/62023102/119232299-9f3d3880-bb1c-11eb-8f93-543de02476ed.png)
