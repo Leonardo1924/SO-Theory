@@ -16,7 +16,7 @@ DeadLock -> Starvation não acontece o vice-versa.
 DeadLocks ocorrem quando estamos a aceder a multiplos recursos.
   - Não podes resolver um deadlock por cada recurso de forma independente.
 
-DeadLocks não são determinísticos e nem sempre acontecem no mesmo pedçado de código
+DeadLocks não são determinísticos e nem sempre acontecem no mesmo peçado de código
   - Tem de ser exatamente no momento certo (ou momento errado?)
   
   ![imagem](https://user-images.githubusercontent.com/62023102/119237446-be47c480-bb34-11eb-922f-16ae37c2202a.png)
