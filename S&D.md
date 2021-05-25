@@ -4,7 +4,7 @@
 
 `Starvation`(indefinite blocking) corresponde a situação em que um processo aguarda indefinidamente por um evento que pode nunca ocorrer.
 
-`DeadLock`é uma situação em que um conjunto de processos está à espera indefinidamente de um evento que nunca irá ocoorer porque esse evento só pode ser causado por um dos processos em espera nesse conjunto.
+`DeadLock`é uma situação em que um conjunto de processos está à espera indefinidamente de um evento que nunca irá ocorrer porque esse evento só pode ser causado por um dos processos em espera nesse conjunto.
 
 DeadLock -> Starvation não a acontece o vice-versa.
   - Starvation pode acabar (apesar de não ter de o fazer) vimos num dos modulos anterior uma possivel solução para este problema;
