@@ -50,7 +50,7 @@ Foram surgeridos varios critérios para comparar algoritmos de escalonamento ent
 
 Critérios de otimização:
   - Maximizar a utilização do CPU E do throughput;
-  - Minimizar o completion time, o tempo de espera e o tempo de respsota.
+  - Minimizar o completion time, o tempo de espera e o tempo de resposta.
 
 # Algoritmo First-Come First-Served (FCFS)
 
