@@ -6,7 +6,7 @@
 
 `DeadLock`é uma situação em que um conjunto de processos está à espera indefinidamente de um evento que nunca irá ocorrer porque esse evento só pode ser causado por um dos processos em espera nesse conjunto.
 
-DeadLock -> Starvation não a acontece o vice-versa.
+DeadLock -> Starvation não acontece o vice-versa.
   - Starvation pode acabar (apesar de não ter de o fazer) vimos num dos modulos anterior uma possivel solução para este problema;
   - DeadLock não termina sem intervenção externa.
 
