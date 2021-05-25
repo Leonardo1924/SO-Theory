@@ -19,7 +19,7 @@ Um semáforo é uma ferramente de sincronização usada para controlar o acesso 
 
 Semáforos são acedidos atráves de duas operações atómicas padrão:
 - `Wait()` -> Espera que o semáforo se torne positivo e depois decrementa-o por 1.
-- `Signal()` -> Operação que incrementa o smáforo por 1.
+- `Signal()` -> Operação que incrementa o semáforo por 1.
 
 ```c
 wait(semaphore S){
