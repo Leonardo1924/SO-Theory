@@ -13,7 +13,7 @@ Um semáforo é uma ferramente de sincronização usada para controlar o acesso 
 #### Existem 2 tipos de semáforos:
 
 - `Counting semaphore` -> Pode variar sobre um domínio sem restrições.
-- `Binary semaphore` -> Que só pode varia entre 0 e 1.
+- `Binary semaphore` -> Que só pode variar entre 0 e 1.
 
 ## Operações com Semáforos:
 
