@@ -95,7 +95,7 @@ Para começar considera o seguinte esquema para mapeamento:
   - Usa uma forma extrema de context switch onde algums processos em memória são temporariamente trocadas da memória para uma backing store.
   - Torna possivel para o espaço total de endereços fisicos de todos os processos exceder a verdadeira memória fisica do sistema.
 
-`Backing store` -> Geralmente um disco rápido e grande o suficiente ppara acomodar cópias de todas as imagens de memória para todos os utilizadores.
+`Backing store` -> Geralmente um disco rápido e grande o suficiente para acomodar cópias de todas as imagens de memória para todos os utilizadores.
 
 - A read queue mantém os processos ready-to-run dos quais têm imagens de mémoria na backing store.
 
