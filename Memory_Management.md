@@ -137,7 +137,7 @@ A geralização é o esquema de partição variável
 # Internal Fragmentation
 
 Fragementação interna existe quando a memória alocado a um processo é ligeiramente maior do que memória solicitada.
- - A diferença de tamanhos esta relaciona com memória que não é usada que é interna a partição.
+ - A diferença de tamanhos esta relacionada com memória que não é usada que é interna a partição.
 
 É o resultado de tentar evitar o overhead quando se mantém o rasto de pequenos buracos na memória.
   `Exemplo:`
