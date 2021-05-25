@@ -7,7 +7,7 @@ A memória(ou memória principal) consiste num grande array de bytes cada um com
 
 Memória e Registos são o único tipo de armazenamento a que o CPU pode aceder diretamente.
 
-- Os programas deve ser trazidos do disto para a memória para ser corridos
+- Os programas deve ser trazidos do disco para a memória para ser corridos
 - O CPU, em seguida, recolhe as instruções da memória de acordo com o counter do programa.
 - Estas instruções podem causar carregamento/armazenamento adicional de/para endereços de memória específicos
 
