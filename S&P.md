@@ -66,7 +66,7 @@ A ideia por detras deste esquema é organizar a memória em blocos de tamanho fi
  - Dividir a memória física ( e a backing store) em blocos do mesmo tamanho chamados `frames`.
 
 Para carregar um processo de N pages, precisamos de encontrar N frames livres.
-- Pages não têm de ser carregas num conjunto contiguo de frames.
+- Pages não têm de ser carregadas num conjunto contiguo de frames.
 - Necessidade de acompanhar as free frames.
 
 ## Paging Model of Memory
