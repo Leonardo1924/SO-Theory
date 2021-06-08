@@ -1,5 +1,5 @@
-# Teoria de Sistemas Operativos
- Alguma matéria referente a cadeira de SO
+# Teoria de Sistemas Operativos (20-21)
+ Alguma matéria referente à UC de Sistemas Operativos da Universidade do Minho.
 
 # Índice:
 

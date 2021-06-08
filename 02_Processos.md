@@ -16,10 +16,10 @@ Recursos podem ser alocados para um processo no momento em que este é criado ou
 
 ### Um processo tem múltiplas partes:
 
-- `Text Section` -> Contém o código do programa;
-- `Data Section` -> Contém as variáveis globais;
+- `Secção de Texto` -> Contém o código do programa;
+- `Secção de Dados` -> Contém as variáveis globais;
 - `Heap` -> Contém memória alocada dinamicamente durante o runtime do processo;
-- `Stack`-> Contém dados temporários(parâmetros de funções, endereços de retorno e variáveis locais).
+- `Stack`-> Contém dados temporários (parâmetros de funções, endereços de retorno e variáveis locais).
 
 ## Programas vs Processos:
 
@@ -38,7 +38,7 @@ Um programa torna-se um processo quando está carregado na memória.
 #### Exemplo:
 
 Se o mesmo utilizador abrir várias cópias do programa Firefox:
- - Cada cópia é considerada um processo diferente e embora a parte da text section seja equivalente, a data, a heap e a stack podem variar.
+ - Cada cópia é considerada um processo diferente e embora o código seja equivalente, os dados, a heap e a stack podem variar.
 
 ## Estados de um Processo:
 
@@ -52,15 +52,15 @@ Um processo pode ser encontrado num dos seguintes estados:
 - `Ready` -> O processo está à espera de ser atribuído a um processador.
 - `Terminated` -> O processo terminou a sua execução.
 
-É importante perceber que muitos processos podem estar em Read ou Waiting, no entanto, apenas 1 processo pode estar a correr em cada core de cada vez.
+É importante perceber que muitos processos podem estar no estado Ready ou Waiting, no entanto, apenas 1 processo pode estar a correr em cada core de cada vez.
 
 ![imagem](https://user-images.githubusercontent.com/62023102/119210666-631ac100-baa5-11eb-9adc-37d15dd5f8b5.png)
 
 # Criação de Processos
 
-Durante a execução um processo pode criar vários novos processos.
- - O processo criador é chamado de "Pai" e os novos processos sãos os seus "filhos".
- - Cada novo processo originado pelo Pai pode criar outros novos processos sendo criada uma "árvore de processos".
+Durante a sua execução, um processo pode criar vários novos processos.
+ - Chama-se ao processo criador "processo pai" e aos processos criados "processos filhos".
+ - Cada novo processo originado pelo pai pode criar outros novos processos sendo criada uma "árvore de processos".
 
 A maioria dos SO identifica os processos de acordo com um único `process identifier` (pid), que tipicamente é representado por um inteiro.
 
@@ -70,22 +70,22 @@ A maioria dos SO identifica os processos de acordo com um único `process identi
 
  ## Partilha de recursos:
  Existem 3 casos possíveis no que toca à partilha de recursos
-  - Processos Pais e Filhos partilham todos os recursos;
-  - Processos Filhos partilham um subconjunto de recursos dos pais;
-  - Processos Pais e Filhos não partilham qualquer recurso.
+  - Processos pais e filhos partilham todos os recursos;
+  - Processos filhos partilham um subconjunto de recursos dos pais;
+  - Processos pais e filhos não partilham qualquer recurso.
 
 ## Execução:
 Existem 2 casos:
- - Pais e Filhos executam de forma concorrente.
- - Pais esperam até um ou todos filhos acabem de executar.
+ - Pais e filhos executam de forma concorrente.
+ - Pais esperam até que um ou todos filhos acabem de executar.
 
 ## Espaço de Endereço:
- - Pais e filhos são duplicados (o filho começa com o programa/dados do processo pai (Herança)).
+ - Pais e filhos são duplicados (o filho começa com o programa/dados do processo pai (herança)).
  - O processo filho contém um novo programa carregado dentro dele.
 
 # Quanto "custa" criar um processo?
-   Copiar o estado de I/O dos pais (Dispositvos alocados,lista de ficheiros abertos, etc...)
-    - Custo médio.
+   Copiar o estado de I/O dos pais (Dispositvos alocados, lista de ficheiros abertos, etc...)
+   - Custo médio.
    
    Configurar novas tabelas de memória para o espaço de endereço.
    - Custo elevado.
@@ -118,7 +118,7 @@ Normalmente depois de um `fork()`, um dos dois processos (pai ou filho) utiliza 
 
 ## Exec():
 
-Esta System Call substitui o espaço de memória do processo -> text, data, heap, stack -> com um novo programa vindo do disco começando a executar este novo programa na sua main, destruindo a imagem anterior do processo. 
+Esta System Call substitui o espaço de memória do processo -> texto, dados, heap, stack -> com um novo programa vindo do disco começando a executar este novo programa na sua main, destruindo a imagem anterior do processo. 
  - Desta maneira, pais e filhos são capazes de seguir caminhos diferentes.
 
 # Fim de um processo
@@ -188,16 +188,16 @@ Os processos dentro de um sistema podem ser independentes ou cooperar:
 
 ## Principais razões para os processos de cooperação:
  - `Partilha de Informação` -> Acesso concorrente ao mesmo pedaço de informação;
- - `Modularidade`-> Quebrar o cálculo em subtasks que fazem mais sentido;
- - `SpeedUp` -> Executar subtasks concorrentes de forma paralela.
+ - `Modularidade`-> Quebrar o cálculo em tarefas mais pequenas que fazem mais sentido;
+ - `Speedup` -> Executar tarefas mais pequenas concorrentes de forma paralela.
 
 Para trocarem dados e informação, processos de cooperação precisam de suportar mecanismos de IPC (interprocess communication). Existem dois modelos fundamentais:
 
- - Passagem de mensagens (Message passing) -> Comunicação via enviar/receber mensagens; 
- - Memória Partilhada (Shared Memory) -> A comunicação ocorre simplesmente por ler/escrever para a memoria partilhada.
+ - Troca de mensagens (Message passing) -> Comunicação via enviar/receber mensagens; 
+ - Memória Partilhada (Shared Memory) -> A comunicação ocorre simplesmente por ler/escrever para a memória partilhada.
 
 #### NB: 
-  Memória Partilha pode levar a problemas de sincronização complexos. No entanto é mais eficiente comparativamente à passagem de mensagens.
+  Memória Partilha pode levar a problemas de sincronização complexos. No entanto é mais eficiente comparativamente à troca de mensagens.
 
 ![imagem](https://user-images.githubusercontent.com/62023102/119226075-6b074f00-baff-11eb-8315-18e178b498e2.png)
 

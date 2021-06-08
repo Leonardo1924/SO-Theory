@@ -8,12 +8,12 @@ Pipes permitem a comunicação num estilo standard (Producer - Consumer):
  - O producer escreve para uma ponta do pipe (the write-end);
  - O consumer lê pela outra ponta do pipe (the read-end);
 
-Os pipes são unidirecionais, apenas permitem comunicação one-way.
+Os pipes são unidirecionais, apenas permitem comunicação em um sentido.
 
 ### NB:
- Se for necessária comunicação two-way, devem ser usados dois pipes, onde cada pipe envia dados em direções diferentes.
+ Se for necessária comunicação nos dois sentidos, devem ser usados dois pipes, onde cada pipe envia dados em direções diferentes.
  
- Pipes podem ser construídos no `terminal` usando o caracter `|`:
+ Pipes podem ser construídos no `terminal` usando o caractere `|`:
   - ``ls | sort``
   - ``cat fich.txt | grep xpto``
 
