@@ -13,9 +13,9 @@ Em Unix, tudo são ficheiros, logo a gestão deles é do mais importante do SO, 
 
 Os descritores standard são os seguintes:
 
-- 0 -> Standard input -> ``STDIN_FILENO``(``<unistd.h>``) -> ``stdin``(``<stdio.h>``)
-- 1 -> Standard output -> ``STDOUT_FILENO``(``<unistd.h>``) -> ``stdout``(``<stdio.h>``)
-- 2 -> Standard error -> ``STDERR_FILENO``(``<unistd.h>``)-> ``stderr``(``<stdio.h>``)
+- 0 -> Standard input -> ``STDIN_FILENO`` em ``<unistd.h>`` -> ``stdin`` em ``<stdio.h>``
+- 1 -> Standard output -> ``STDOUT_FILENO`` em ``<unistd.h>`` -> ``stdout`` em ``<stdio.h>``
+- 2 -> Standard error -> ``STDERR_FILENO`` em ``<unistd.h>`` -> ``stderr`` em ``<stdio.h>``
 
 **NB**: Estes descritores podem ser redefinidos (Guião 4).
 

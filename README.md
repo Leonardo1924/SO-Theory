@@ -5,15 +5,15 @@
 
 
  0. [Conceitos Básicos](./0_Conceitos_Basicos.md)
- 1. [Ficheiros]./1_Ficheiros.md)
- 2. [Processos](./2_Processos.md)
- 3. [Pipes](./3_Pipes.md)
- 4. [Escalonamento de Processos](./4_Escalonamento_de_Processos.md)
- 5. [Sincronização de Processos](./5_Sincronização_de_Processos.md)
- 6. [Semáforos](./6_Semáforos.md)
- 7. [Starvation and DeadLock](./7_Starvation_e_Deadlock.md)
- 8. [Gestão de Memória](./8_Gestão_de_Memória.md)
- 9. [Segmentation && Paging](./9_Segmentation_e_Paging.md)
+ 1. [Ficheiros](./01_Ficheiros.md)
+ 2. [Processos](./02_Processos.md)
+ 3. [Pipes](./03_Pipes.md)
+ 4. [Escalonamento de Processos](./04_Escalonamento_de_Processos.md)
+ 5. [Sincronização de Processos](./05_Sincronização_de_Processos.md)
+ 6. [Semáforos](./06_Semáforos.md)
+ 7. [Starvation and DeadLock](./07_Starvation_e_Deadlock.md)
+ 8. [Gestão de Memória](./08_Gestão_de_Memória.md)
+ 9. [Segmentation && Paging](./09_Segmentation_e_Paging.md)
  10. [Memória Virtual](./10_Memória_Virtual.md)
 
  
