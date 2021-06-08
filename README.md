@@ -4,21 +4,21 @@
 # Índice:
 
 
- 0. [Conceitos Básicos](./Basic.md)
- 1. [Ficheiros](https://github.com/mendess/ResumosMIEI/blob/master/SO/Ficha1.md)
- 2. [Processos](./Process.md)
- 3. [Pipes](./Pipes.md)
- 4. [Escalonamento de Processos](./Process_Schedule.md)
- 5. [Sincronização de Processos](./Process_Sync.md)
- 6. [Semáforos](./Semaphores.md)
- 7. [Starvation and DeadLock](./S&D.md)
- 8. [Gestão de Memória](./Memory_Management.md)
- 9. [Segmentation && Paging](./S&P.md)
- 10. [Memória Virtual](./Virtual_Memory.md)
+ 0. [Conceitos Básicos](./0_Conceitos_Basicos.md)
+ 1. [Ficheiros]./1_Ficheiros.md)
+ 2. [Processos](./2_Processos.md)
+ 3. [Pipes](./3_Pipes.md)
+ 4. [Escalonamento de Processos](./4_Escalonamento_de_Processos.md)
+ 5. [Sincronização de Processos](./5_Sincronização_de_Processos.md)
+ 6. [Semáforos](./6_Semáforos.md)
+ 7. [Starvation and DeadLock](./7_Starvation_e_Deadlock.md)
+ 8. [Gestão de Memória](./8_Gestão_de_Memória.md)
+ 9. [Segmentation && Paging](./9_Segmentation_e_Paging.md)
+ 10. [Memória Virtual](./10_Memória_Virtual.md)
 
  
 ## Matéria e informações adicionais podem ser encontradas aqui:
- 1. [Threads](./Threads.md)
- 2. [Storage Devices](./St_Device.md)
+ 1. [Threads](./E1_Thread.md)
+ 2. [Storage Devices](./E2_Dispositivos_de_Armazenamento.md)
  3. [ResumosMIEI](https://github.com/mendess/ResumosMIEI/tree/master/SO)
 
