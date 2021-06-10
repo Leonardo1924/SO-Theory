@@ -4,7 +4,7 @@
 # Índice:
 
 
- 0. [Conceitos Básicos](./0_Conceitos_Basicos.md)
+ 0. [Conceitos Básicos](./00_Conceitos_Basicos.md)
  1. [Ficheiros](./01_Ficheiros.md)
  2. [Processos](./02_Processos.md)
  3. [Pipes](./03_Pipes.md)
