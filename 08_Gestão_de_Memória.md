@@ -15,7 +15,7 @@ Memória e Registos são o único tipo de armazenamento a que o CPU pode aceder 
 
 A maioria dos CPUs consegue descodificar as instruções e realizar operações simples em registos à taxa de uma ou mais operações por clock cycle.
 
-A memória é acedida pelo memory bus o que pode levar algums clock cycles do CPU.
+A memória é acedida pelo memory bus o que pode levar alguns clock cycles do CPU.
 
 A cache encontra-se entre a memória e os registos do CPU. Permite aumentar a velocidade de acesso à memória. 
 
