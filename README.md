@@ -6,8 +6,8 @@
 <div id="index" align="center">
  
 <h2> Índice: </h2>
-0️⃣
 <div  id="0" align="center">
+0️⃣
 <a Conceitos Básicos href="00_Conceitos_B%C3%A1sicos.md"> Conceitos Básicos </a>
 </div> 
 <div  id="1" align="center">
