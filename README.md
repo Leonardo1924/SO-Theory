@@ -1,3 +1,4 @@
+<meta charset="utf-8"> 
 <div id="header" align="center">
 <h1> Teoria de Sistemas Operativos </h1>
 <img src="/img/osmain.png" alt="osmain">
