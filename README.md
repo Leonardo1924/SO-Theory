@@ -1,7 +1,7 @@
 # Teoria de Sistemas Operativos
 Matéria referente à UC de Sistemas Operativos da Universidade do Minho.
 
-![image](https://sites.google.com/site/sistemaoperativosso/_/rsrc/1423750637173/home/so.jpg)
+<img src="/img/os-main.jpg" alt="profilepic" width="30%" height="30%">
 
 # Índice:
 
