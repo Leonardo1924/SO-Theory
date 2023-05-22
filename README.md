@@ -1,6 +1,6 @@
 <div id="header" align="center">
 <h1> Teoria de Sistemas Operativos </h1>
-<img src="/images/osmain.png" alt="osmain">
+<img src="/img/osmain.png" alt="osmain">
 </div>
 
 <div id="index" align="center">
