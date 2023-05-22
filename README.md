@@ -7,17 +7,17 @@
  
 <h2> Índice: </h2>
 
- 0. [Conceitos Básicos](./00_Conceitos_Básicos.md)
- 1. [Ficheiros](./01_Ficheiros.md)
- 2. [Processos](./02_Processos.md)
- 3. [Pipes](./03_Pipes.md)
- 4. [Escalonamento de Processos](./04_Escalonamento_de_Processos.md)
- 5. [Sincronização de Processos](./05_Sincronização_de_Processos.md)
- 6. [Semáforos](./06_Semáforos.md)
- 7. [Starvation e DeadLock](./07_Starvation_e_Deadlock.md)
- 8. [Gestão de Memória](./08_Gestão_de_Memória.md)
- 9. [Segmentation e Paging](./09_Segmentation_e_Paging.md)
- 10. [Memória Virtual](./10_Memória_Virtual.md)
+[Conceitos Básicos](./00_Conceitos_Básicos.md)
+[Ficheiros](./01_Ficheiros.md)
+[Processos](./02_Processos.md)
+[Pipes](./03_Pipes.md)
+[Escalonamento de Processos](./04_Escalonamento_de_Processos.md)
+[Sincronização de Processos](./05_Sincronização_de_Processos.md)
+[Semáforos](./06_Semáforos.md)
+[Starvation e DeadLock](./07_Starvation_e_Deadlock.md)
+[Gestão de Memória](./08_Gestão_de_Memória.md)
+[Segmentation e Paging](./09_Segmentation_e_Paging.md)
+[Memória Virtual](./10_Memória_Virtual.md)
  
  </div>
 
