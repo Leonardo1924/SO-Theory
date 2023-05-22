@@ -1,3 +1,4 @@
+<meta charset="utf-8"> 
 # O que é um Sistema Operativo?
 
 ## Motivação:
