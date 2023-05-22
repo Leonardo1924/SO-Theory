@@ -8,37 +8,37 @@
 <h2> Índice: </h2>
 
 <div  id="0" align="center">
-[Conceitos Básicos](./00_Conceitos_Básicos.md)
+ [Conceitos Básicos](./00_Conceitos_Básicos.md)
 </div> 
 <div  id="1" align="center">
-[Ficheiros](./01_Ficheiros.md)
+ [Ficheiros](./01_Ficheiros.md)
 </div> 
 <div  id="2" align="center">
-[Processos](./02_Processos.md)
+ [Processos](./02_Processos.md)
 </div>
 <div  id="3" align="center">
-[Pipes](./03_Pipes.md)
+ [Pipes](./03_Pipes.md)
 </div>
 <div  id="4" align="center">
-[Escalonamento de Processos](./04_Escalonamento_de_Processos.md)
+ [Escalonamento de Processos](./04_Escalonamento_de_Processos.md)
 </div>
 <div  id="5" align="center">
-[Sincronização de Processos](./05_Sincronização_de_Processos.md)
+ [Sincronização de Processos](./05_Sincronização_de_Processos.md)
 </div> 
 <div  id="6" align="center">
-[Semáforos](./06_Semáforos.md)
+ [Semáforos](./06_Semáforos.md)
 </div> 
 <div  id="7" align="center">
-[Starvation e DeadLock](./07_Starvation_e_Deadlock.md)
+ [Starvation e DeadLock](./07_Starvation_e_Deadlock.md)
 </div> 
 <div  id="8" align="center">
-[Gestão de Memória](./08_Gestão_de_Memória.md)
+ [Gestão de Memória](./08_Gestão_de_Memória.md)
 </div> 
 <div  id="9" align="center">
-[Segmentation e Paging](./09_Segmentation_e_Paging.md)
+ [Segmentation e Paging](./09_Segmentation_e_Paging.md)
 </div> 
 <div  id="10" align="center">
-[Memória Virtual](./10_Memória_Virtual.md)
+ [Memória Virtual](./10_Memória_Virtual.md)
  </div>
  </div>
 
