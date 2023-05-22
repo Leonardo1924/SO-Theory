@@ -8,7 +8,7 @@
 <h2> Índice: </h2>
 
 <div  id="0" align="center">
- [Conceitos Básicos](./00_Conceitos_Básicos.md)
+  <a href="https://github.com/Leonardo1924/SO-Theory/blob/main/00_Conceitos_B%C3%A1sicos.md" Conceitos Básicos>
 </div> 
 <div  id="1" align="center">
  [Ficheiros](./01_Ficheiros.md)
