@@ -10,6 +10,7 @@
 <div  id="0" align="center">
 0️⃣
 <a href="00_Conceitos_B%C3%A1sicos.md" Conceitos Básicos> </a>
+<img src="https://github.com/seanprashad/slackmoji/blob/master/emoji/parrots/parrot.gif" height="50" width="50">
 </div> 
 <div  id="1" align="center">
 1️⃣
