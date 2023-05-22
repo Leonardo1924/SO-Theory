@@ -52,9 +52,15 @@
 </div>
 </div>
 
- 
-<h3> Matéria e informações adicionais podem ser encontradas aqui:</h3>
- 1. [Threads](./E1_Thread.md)
- 2. [Dispositivos de Armazenamento](./E2_Dispositivos_de_Armazenamento.md)
- 3. [ResumosMIEI](https://github.com/mendess/ResumosMIEI/tree/master/SO)
+
+<div id="Extras" align="center">
+<h2> Matéria e informações adicionais podem ser encontradas aqui </h2>
+<div  id="1" align="center">
+<a href="./E1_Thread.md"> Threads </a>
+</div>
+<div  id="2" align="center">
+<a href="./E2_Dispositivos_de_Armazenamento.md"> Dispositivos de Armazenamento </a>
+<div  id="3" align="center">
+<a href="https://github.com/mendess/ResumosMIEI/tree/master/SO"> Resumos MIEI </a>
+</div>
 
