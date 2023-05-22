@@ -9,7 +9,7 @@
 
 <div  id="0" align="center">
  <a href="https://github.com/Leonardo1924/SO-Theory/blob/main/00_Conceitos_B%C3%A1sicos.md" Conceitos Básicos>
- <img src="![Debian](https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&logo=debian&logoColor=white)" alt="Debian Badge"/>
+ <img src="https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&logo=debian&logoColor=white" alt="Debian Badge"/>
  </a>
 </div> 
 <div  id="1" align="center">
