@@ -119,7 +119,7 @@
 -`Proteção e Segurança`: Para evitar a interferência entre processos concorrentes ou com o próprio SO e proteger o sistema contra "outsiders".
 
 # Multiprogramming
-  - Um dos aspetos mais importantes de um SO é a capacidadede de ter múltiplos programas a correr simultaneamente.
+  - Um dos aspetos mais importantes de um SO é a capacidade de ter múltiplos programas a correr simultaneamente.
   
   - Multiprogramming aumenta a utilização do CPU pela organização de processos para que o CPU possa sempre executar um processo.
 
