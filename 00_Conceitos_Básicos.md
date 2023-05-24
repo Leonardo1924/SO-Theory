@@ -10,7 +10,7 @@
 
 ### Como podemos definir um Sistema Operativo ou parte dele?
 
-- Não existe um definição universalmente aceite.
+- Não existe uma definição universalmente aceite.
 - Uma definição mais restrita seria "Aquele programa que corre o tempo todo num computador", tudo o resto ou é um programa de sistema ou uma aplicação.
 
 #### Um Sistema Operativo é o que gere o hardware do Computador:
@@ -26,7 +26,7 @@
   - O Sistema Operativo é projetado, principalmente, para facilitar a utilização de um sistema, ou seja, contém um maior foco na performance do que na utilização de recursos.
   - Configurado para correr com a mínima, ou até mesmo nenhuma, intervenção do usuário.
 
-### Um Sistema pode ser divido em 4 componentes principais:
+### Um Sistema pode ser dividido em 4 componentes principais:
   
   - `Hardware:` Os recursos básicos do sistema (CPU, memória, dispositivos I/O, ...);
   - `Sistema Operativo:` Controla e coordena o uso do hardware entre os diferentes programas e utilizadores;
