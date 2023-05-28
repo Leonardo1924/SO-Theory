@@ -46,7 +46,7 @@ Um deadlock só pode surgir se as próximas 4 condições se mantiverem simultan
 Para garantir que deadlocks nunca ocorem, o sistema pode usar um protocolo para prevenir ou para evitar deadlocks.
 
   - `Prevenção de deadlocks` -> Métodos que garantem que pelo menos uma das quatro condições necessárias não ocorre, limitando a forma como os pedidos de recursos podem ser feitos.
-  - `Evitar deadlocks` -> Métodos que exigem que o sistema operativo seja previamente informado, sobre quais os recursos que um processo irá utilizar durante a ua vida útil, de modo a decidir se o pedido de recursos consegue ser satisfeito ou se deve ser adiado.
+  - `Evitar deadlocks` -> Métodos que exigem que o sistema operativo seja previamente informado, sobre quais os recursos que um processo irá utilizar durante a sua vida útil, de modo a decidir se o pedido de recursos consegue ser satisfeito ou se deve ser adiado.
 
 Se o sistem não implementar nenhum dos protocolos anteriores então é provável que ocorra o aparecimento de um deadlock:
 
