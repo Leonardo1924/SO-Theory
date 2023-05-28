@@ -12,7 +12,7 @@ Segmentação é um esquema de gestão de memória que satisfaz a visão da mem�
 
 Cada segmento tem um identificador e um tamanho.
 
-Endereçps lógicos (dentro do segmento) existem na forma de tuplos:
+Endereços lógicos (dentro do segmento) existem na forma de tuplos:
 
 ```c 
 <segment-number, offset-within-segment>
