@@ -51,7 +51,7 @@ O procedimento para resolver uma page fault é simples:
 
 1. Verificar o PCB para determinar se a referência era um acesso legal ou ilegal à memória (se ilegal terminar o processo).
 
-2. Encontrar uma frame livre e moverer a página em falta para essa frame (o carregamento é feito da backing store).
+2. Encontrar uma frame livre e mover a página em falta para essa frame (o carregamento é feito da backing store).
 
 3. Dar reset à tabela de pages para indicar que a página está agora em memória.
 
