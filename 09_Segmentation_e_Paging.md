@@ -34,7 +34,7 @@ A tabela de Segmentos encontra-se no PCB (Process Control Block). Esta tabela in
 
 # Gestão de Segmentos
 
-Quando um novo processo é carragado em memória:
+Quando um novo processo é carregado em memória:
 - Cria-se uma nova tabela de segmento e armazena-se no PCB de processos;
 - Aloca-se espaço na memória fisica para todos os segmentos do processo.
 
